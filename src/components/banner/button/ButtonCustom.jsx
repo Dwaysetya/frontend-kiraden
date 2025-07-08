@@ -7,10 +7,9 @@ const ButtonCustom = () => {
 
   const handleClick = () => {
     setIsClicked(true);
-    // Delay animasi lalu navigate
     setTimeout(() => {
       navigate("/");
-    }, 300); // waktu animasi
+    }, 300);
   };
 
   return (

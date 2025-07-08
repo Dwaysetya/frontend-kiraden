@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 
 const AutoCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  // Data untuk 8 kotak dengan warna berbeda
   const slides = [
     { id: 1, title: "Slide 1", color: "bg-red-500", content: "Konten Pertama" },
     { id: 2, title: "Slide 2", color: "bg-blue-500", content: "Konten Kedua" },
@@ -40,40 +38,35 @@ const AutoCarousel = () => {
     },
   ];
 
-  // Fungsi untuk mendapatkan jumlah item yang ditampilkan berdasarkan ukuran layar
   const getVisibleItems = () => {
-    if (window.innerWidth < 640) return 1; // Mobile: 1 kotak
-    if (window.innerWidth < 1024) return 2; // Medium: 2 kotak
-    return 4; // Large: 4 kotak
+    if (window.innerWidth < 640) return 1;
+    if (window.innerWidth < 1024) return 2;
+    return 4;
   };
 
   const [visibleItems, setVisibleItems] = useState(4);
 
-  // Update visible items on resize
   useEffect(() => {
     const handleResize = () => {
       setVisibleItems(getVisibleItems());
-      setCurrentSlide(0); // Reset to first slide on resize
+      setCurrentSlide(0);
     };
 
-    handleResize(); // Set initial value
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Hitung maksimum slide berdasarkan visible items
   const maxSlides = slides.length - visibleItems + 1;
 
-  // Auto slide timer
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % maxSlides);
-    }, 3000); // Slide setiap 3 detik
+    }, 3000);
 
     return () => clearInterval(timer);
   }, [maxSlides]);
 
-  // Fungsi untuk navigasi manual
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % maxSlides);
   };
@@ -86,7 +79,6 @@ const AutoCarousel = () => {
     setCurrentSlide(index);
   };
 
-  // Fungsi untuk mendapatkan translate percentage
   const getTranslateX = () => {
     return currentSlide * (100 / visibleItems);
   };
@@ -97,9 +89,7 @@ const AutoCarousel = () => {
         Galeri
       </h2>
 
-      {/* Carousel Container */}
       <div className="relative overflow-hidden bg-gray-500 rounded-2xl p-4">
-        {/* Carousel Track */}
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${getTranslateX()}%)` }}
@@ -133,8 +123,6 @@ const AutoCarousel = () => {
             </div>
           ))}
         </div>
-
-        {/* Navigation Buttons */}
         <button
           onClick={prevSlide}
           className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-1 sm:p-2 shadow-lg transition-all duration-200"
@@ -173,8 +161,6 @@ const AutoCarousel = () => {
           </svg>
         </button>
       </div>
-
-      {/* Indicator Dots */}
       <div className="flex justify-center mt-4 sm:mt-6 space-x-2 px-4 overflow-x-auto">
         {Array.from({ length: maxSlides }).map((_, index) => (
           <button
@@ -188,16 +174,12 @@ const AutoCarousel = () => {
           />
         ))}
       </div>
-
-      {/* Progress Bar */}
       <div className="mt-3 sm:mt-4 w-full bg-gray-200 rounded-full h-1">
         <div
           className="bg-amber-500 h-1 rounded-full transition-all duration-300 ease-linear"
           style={{ width: `${((currentSlide + 1) / maxSlides) * 100}%` }}
         />
       </div>
-
-      {/* Info Panel */}
       <div className="mt-4 sm:mt-6 text-center">
         <p className="text-sm sm:text-base text-white">
           Menampilkan slide {currentSlide + 1} dari {maxSlides} •

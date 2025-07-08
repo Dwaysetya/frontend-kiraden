@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // Pastikan import icons
+import { Menu, X } from "lucide-react";
 import Logo from "../logo/Logo";
 import NavMenu from "./NavMenu";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  // State untuk mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
@@ -15,8 +14,6 @@ function Navbar() {
     { label: "FAQ", to: "/faq" },
     { label: "KONTAK", to: "/kontak" },
   ];
-
-  // Function untuk toggle mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -41,17 +38,11 @@ function Navbar() {
         <div className="flex sm:flex-shrink-0 justify-start md:justify-center items-center">
           <Logo size="small" />
         </div>
-
-        {/* Desktop Menu - tampil di md ke atas */}
         <div className="hidden md:flex text-white justify-center items-center gap-5">
           <NavMenu links={navLinks} />
         </div>
-
-        {/* Mobile Menu Button */}
         {renderMobileMenuButton()}
       </div>
-
-      {/* Mobile Menu Dropdown - tampil di bawah md */}
       {isMobileMenuOpen && (
         <div className="md:hidden mt-4 py-4 border-t border-gray-800">
           <div className="flex flex-col space-y-2">
@@ -60,7 +51,7 @@ function Navbar() {
                 key={index}
                 to={link.to}
                 className="text-white hover:text-gray-300 px-4 py-2 text-left transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)} // Tutup menu saat link diklik
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
               </Link>
