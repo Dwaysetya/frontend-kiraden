@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CardRespons } from "../utils/Constanta";
+import { cardRespons } from "../utils/Constanta";
 
 const CardsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -18,7 +18,7 @@ const CardsSection = () => {
   const renderCard = () => {
     return (
       <>
-        {CardRespons.map((card) => (
+        {cardRespons.map((card) => (
           <div
             key={card.id}
             className="bg-[#202020] rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"

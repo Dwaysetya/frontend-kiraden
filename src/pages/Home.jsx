@@ -5,7 +5,7 @@ import Banner from "../components/banner/Banner";
 import Section2 from "../../src/assets/section2/12 copy.png";
 import HoverSlideButton from "../components/banner/button/ButtonSlideHover";
 import CardsSection from "../components/CardSection";
-import { IconRespons } from "../utils/Constanta";
+import { iconRespons } from "../utils/Constanta";
 
 function Home() {
   const renderIcon = () => {
@@ -14,7 +14,7 @@ function Home() {
         <div className=" w-full mt-20 md:mt-2 flex relative justify-center items-center">
           <div className="border-b-4 border-white w-full self-center"></div>
           <div className="w-[80%] flex absolute p-5 bg-[#202020] h-auto rounded-full justify-center items-center border-r-2 border-l-2 border-white flex-wrap">
-            {IconRespons.map((item, index) => (
+            {iconRespons.map((item, index) => (
               <div
                 className="w-auto flex h-auto justify-center items-center
              basis-1/3 sm:basis-1/5 lg:basis-auto

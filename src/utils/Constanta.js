@@ -10,7 +10,7 @@ import icon9 from "../../src/assets/icon/icon9.png";
 import icon10 from "../../src/assets/icon/icon10.png";
 import icon11 from "../../src/assets/icon/icon11.png";
 
-export const IconRespons = [
+export const iconRespons = [
   {
     img: icon1,
   },
@@ -46,7 +46,7 @@ export const IconRespons = [
   },
 ];
 
-export const CardRespons = [
+export const cardRespons = [
   {
     id: 1,
     logo: "https://via.placeholder.com/64",
