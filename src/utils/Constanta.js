@@ -50,7 +50,7 @@ export const cardRespons = [
   {
     id: 1,
     logo: "https://via.placeholder.com/64",
-    title: "Hipnoterapi",
+    title: "Kelas Umum",
     description:
       "Pelajari teknik hipnoterapi untuk penyembuhan dan pengembangan diri.",
     modalImage: "https://via.placeholder.com/600x400",
@@ -65,7 +65,7 @@ export const cardRespons = [
   {
     id: 2,
     logo: "https://via.placeholder.com/64",
-    title: "Indra Keenam",
+    title: "Kelas Private",
     description:
       "Kembangkan kemampuan intuitif dan persepsi ekstrasensor Anda.",
     modalImage: "https://via.placeholder.com/600x400",
@@ -80,7 +80,7 @@ export const cardRespons = [
   {
     id: 3,
     logo: "https://via.placeholder.com/64",
-    title: "Energi Metafisik",
+    title: "Kelas Terapi Holistik",
     description:
       "Kuasai energi metafisik untuk keseimbangan dan kekuatan batin.",
     modalImage: "https://via.placeholder.com/600x400",

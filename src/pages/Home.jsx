@@ -52,7 +52,10 @@ function Home() {
         </div>
         {renderIcon()}
       </section>
-      <section className="w-full min-h-[400px] md:min-h-screen mt-15">
+      <section
+        className="w-full min-h-[400px] md:min-h-screen mt-15"
+        id="tentang"
+      >
         <div className="w-full relative">
           <img
             src={Section2}

@@ -1,19 +1,21 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Logo from "../logo/Logo";
 import NavMenu from "./NavMenu";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
+const navLinks = [
+  { label: "HOME", to: "/", href: "/" },
+  { label: "TENTANG KAMI", to: "tentang", type: "scroll" },
+  { label: "PROGRAM KELAS", to: "/program-kelas", type: "route" },
+  { label: "FAQ", to: "/faq" },
+  { label: "KONTAK", to: "/kontak" },
+];
 function Navbar() {
+  // const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const navLinks = [
-    { label: "HOME", to: "/" },
-    { label: "TENTANG KAMI", to: "/tentang kami" },
-    { label: "PROGRAM KELAS", to: "/program kelas" },
-    { label: "FAQ", to: "/faq" },
-    { label: "KONTAK", to: "/kontak" },
-  ];
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -46,16 +48,33 @@ function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden mt-4 py-4 border-t border-gray-800">
           <div className="flex flex-col space-y-2">
-            {navLinks.map((link, index) => (
-              <Link
-                key={index}
-                to={link.to}
-                className="text-white hover:text-gray-300 px-4 py-2 text-left transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link, index) => {
+              if (link.type === "route") {
+                return (
+                  <RouterLink
+                    key={index}
+                    to={link.to}
+                    className="text-white hover:text-gray-300 px-4 py-2 text-left transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </RouterLink>
+                );
+              }
+              return (
+                <ScrollLink
+                  key={index}
+                  to={link.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="text-white hover:text-blue-400 cursor-pointer"
+                >
+                  {link.label}
+                </ScrollLink>
+              );
+            })}
           </div>
         </div>
       )}
