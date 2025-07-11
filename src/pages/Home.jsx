@@ -68,7 +68,7 @@ function Home() {
         >
           <AutoCarousel />
         </div>
-        <div className="my-50 md:my-20">{renderIcon()}</div>
+        <div className="mb-35 md:my-20">{renderIcon()}</div>
       </section>
       <section
         className="w-full h-auto md:min-h-auto bg-amber-300 my-10"
