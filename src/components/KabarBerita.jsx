@@ -75,7 +75,7 @@ function KabarBerita() {
   return (
     <>
       <section className="flex w-full justify-center items-center px-5 md:px-20 py-10 bg-black">
-        <div className="flex w-full max-w-7xl flex-col gap-10">
+        <div className="flex w-full max-w-7xl flex-col gap-2">
           {/* Judul */}
           <h1 className="text-white font-bold text-3xl md:text-4xl">
             Kabar Sekolah Paranormal
@@ -88,7 +88,7 @@ function KabarBerita() {
                 <div
                   key={index}
                   className="bg-[#1e1e1e] p-6 rounded-lg shadow-md text-white flex flex-col gap-4
-                       w-[calc(25%-1.5rem)] min-w-[250px] snap-start"
+                       w-[calc(25%-1.5rem)] min-w-[100%] md: snap-start"
                 >
                   <div className="border-b-2 border-white w-full" />
                   <div className="text-sm text-gray-400">{item.tanggal}</div>
