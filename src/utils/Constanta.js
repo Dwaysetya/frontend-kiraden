@@ -93,3 +93,65 @@ export const cardRespons = [
     ],
   },
 ];
+
+export const answerQuestions = [
+  {
+    questions: "Apa itu Sekolah Paranormal?",
+    answer:
+      "Sekolah paranormal adalah tempat atau institusi (formal atau non-formal) yang menyediakan pengajaran, pelatihan, atau pembelajaran terkait hal-hal supranatural atau metafisika.",
+  },
+  {
+    questions: "Apakah boleh non muslim ikut berpartisipasi belajar? ",
+    answer:
+      "Tentu sangat boleh, di SPI bebas tanpa batas tanpa memandang ras suku bangsa serta agama.",
+  },
+  {
+    questions: "Syarat apa saja untuk bergabung belajar di SPI? ",
+    answer:
+      "Niat yang kuat, biaya pendidikan, bersedia mengikuti tata cara etika aturan yng ada, Sehat jasmani dan rohani tidak Buta tuli / ODGJ.",
+  },
+  {
+    questions:
+      "Sistem belajar nya bagaimana, apa harus datang langsung atau gimana ? ",
+    answer:
+      "Sistem nya bisa online atau pun offline (jarak dekat atau jarak jauh), tapi jika dekat disarankan datang langsung karena lebih Afdol dan cepat tanggap. ",
+  },
+  {
+    questions: "Berapa lama proses pembelajaran nya? ",
+    answer:
+      "Proses nya tergantung Program kelas yang di pilih, jika kelas umum maka -+ 9 bulan masa pendidikan. Tapi jika kelas privat hanya 1-3 kali pertemuan dengan durasi 1-3 jam persekali pertemuan. ",
+  },
+  {
+    questions:
+      "Sistem pembelajaran nya itu pakai ritual puasa, wirid ribuan, pati geni dll tidak ?",
+    answer:
+      "Mohon maaf, sistem pembelajaran di SPI tidak menggunakan ritual sesat bin berat. Semua diajarkan sperti sekolah pada umum nya, materi + praktek langsung dengan metode pengajaran secara sains ilmiah rasional mudah dimengerti dan dipelajari oleh semua kalangan. ",
+  },
+  {
+    questions: "Apa jaminan berhasil jika belajar di SPI? ",
+    answer:
+      "Punten mohon maaf, Tugas kami sebatas sbg tenaga pendidik Yang memberi bimbingan pengajaran dengan penuh tanggung jawab & profesional. Mengajarkan segala keilmuan yang ada sesuai standart sop yang berlaku di SPI, perihal BERHASIL atau TIDAK semua tergantung Nilai kecerdasan keseriusan sungguh2 dan istikomah para siswa dalam mengikuti proses kegiatan belajar mengajar di SPI. ",
+  },
+  {
+    questions: "Berapa biaya pendidikan pembelajaran di SPI?",
+    answer:
+      "Untuk biaya semua sudah tertulis lengkap di beranda web, silakan untuk lebih jelas nya disimak.",
+  },
+  {
+    questions:
+      "Apakah orang awam seperti saya, (kosongan tidak ada Trah/sanad) bisa ikut berpartisipasi belajar di SPI? ",
+    answer:
+      "Ooh sangat tentu BISA, karena di SPI sistem metode pembelajaran nya modern mudah di pelajari tanpa ritual sesat bin berat aneh dan nyeleneh.",
+  },
+  {
+    questions:
+      "Apakah belajar paranormal bisa membuat kita gila dan berlaku negatif?",
+    answer:
+      "Alhamdulillah,, selama kita belajar ditempat yang tepat tidak akan tersesat. Kembali pada sistem metode pembelajaran nya, tapi di SPI itu lembaga pendidikan yang Legal handal profesional. Soo aman tanpa pengaman",
+  },
+  {
+    questions: "Apakah belajar di sekolah paranormal menggunakan jin Khodam?",
+    answer:
+      "Allahu akbar... Alhamdulillah di SPI lebih mengedepankan metode pembelajaran modern rasional ilmiah TANPA MENGUTAMAKAN jin Khodam dan sejenisnya. Berbasis olah pikir mengedepankan kekuatan pikiran alam bawah sadar yng murni mengalir alami dalam diri kita sendiri.",
+  },
+];

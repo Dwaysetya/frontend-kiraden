@@ -36,9 +36,14 @@ const CardsSection = () => {
             </p>
             <button
               onClick={() => openModal(card)}
-              className="px-4 py-2 bg-amber-500 text-white rounded-md hover:bg-amber-600 transition-colors duration-200"
+              className="px-4 py-2 text-black rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg relative overflow-hidden group"
+              style={{
+                background:
+                  "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
+              }}
             >
-              Lihat Selengkapnya
+              <span className="absolute inset-0 bg-gradient-to-t from-[#a87c2d] via-[#f3cb51] to-[#906126] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <span className="relative z-10">Lihat Selengkapnya</span>
             </button>
           </div>
         ))}
@@ -47,11 +52,30 @@ const CardsSection = () => {
   };
 
   return (
-    <section className="w-full py-10 bg-[#2f2f2f] rounded-4xl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
-          Program Kami
-        </h2>
+    <section className="w-full py-10 bg-[#2f2f2f] rounded-4xl relative">
+      {/* Garis putih di belakang - responsive positioning */}
+      <div className="absolute top-20 sm:top-20 md:top-20 lg:top-20 left-0 right-0 h-0.5 bg-white z-0" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Oval container dengan tulisan */}
+        <div className="w-full flex justify-center items-center mb-8">
+          <div className="bg-[#2f2f2f] border-2 border-white rounded-full px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-2">
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl font-bold text-center whitespace-nowrap p-2"
+              style={{
+                background:
+                  "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              Program Kelas
+            </h2>
+          </div>
+        </div>
+
+        {/* Grid untuk cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {renderCard()}
         </div>

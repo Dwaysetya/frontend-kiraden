@@ -2,15 +2,15 @@
 
 @tailwind utilities;
 body {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #202020;
 }
 .logo--small {
-  @apply w-[150px] h-[61px] flex items-center justify-center items-center;
+  @apply h-[61px] flex items-center justify-center items-center;
 }
 
 .logo-img--small {
-  @apply w-[150px] h-[60px] md:h-[100px] object-contain;
+  @apply h-[60px] md:h-[100px] object-contain;
 }
 
 .logo--large {
@@ -19,4 +19,7 @@ body {
 
 .logo-img--large {
   @apply w-[628px] h-[246px] object-contain;
+}
+.inputan{
+  @apply w-full h-12 rounded-full bg-white/10 px-4 text-white placeholder-gray-400 border border-transparent focus:border-blue-500 focus:outline-none transition-all duration-200
 }

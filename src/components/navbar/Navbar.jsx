@@ -1,3 +1,4 @@
+// navbar.jsx
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Logo from "../logo/Logo";
@@ -6,14 +7,16 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const navLinks = [
-  { label: "HOME", to: "/", href: "/" },
-  { label: "TENTANG KAMI", to: "tentang", type: "scroll" },
-  { label: "PROGRAM KELAS", to: "/program-kelas", type: "route" },
-  { label: "FAQ", to: "/faq" },
-  { label: "KONTAK", to: "/kontak" },
+  { label: "BERANDA", to: "beranda", type: "scroll" }, // Assuming Beranda is always a route to home
+  { label: "GALERI", to: "galeri-section", type: "scroll" }, // Changed to scroll, assuming "galeri-section" is the ID of your gallery section
+  { label: "TENTANG KAMI", to: "/tentang-kami", type: "route" }, // Changed to route
+  { label: "BERITA", to: "berita-section", type: "scroll" }, // Changed to scroll
+  { label: "PROGRAM KELAS", to: "program-kelas-section", type: "scroll" }, // Changed to scroll
+  { label: "FAQ", to: "faq-section", type: "scroll" }, // Changed to scroll
+  { label: "KONTAK", to: "kontak-section", type: "scroll" }, // Changed to scroll
 ];
+
 function Navbar() {
-  // const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -35,12 +38,13 @@ function Navbar() {
   );
 
   return (
-    <nav className="w-full md:fixed md:z-99 p-5 px-8 md:px-20">
+    <nav className="w-full md:fixed md:z-99 p-7 px-8 md:px-20 bg-black/30">
       <div className="w-full flex justify-between items-center">
-        <div className="flex sm:flex-shrink-0 justify-start md:justify-center items-center">
+        <div className="flex p-2 sm:flex-shrink-0 justify-start md:justify-center items-center">
           <Logo size="small" />
         </div>
         <div className="hidden md:flex text-white justify-center items-center gap-5">
+          {/* Pass the navLinks to NavMenu */}
           <NavMenu links={navLinks} />
         </div>
         {renderMobileMenuButton()}
@@ -49,6 +53,7 @@ function Navbar() {
         <div className="md:hidden mt-4 py-4 border-t border-gray-800">
           <div className="flex flex-col space-y-2">
             {navLinks.map((link, index) => {
+              // Conditionally render RouterLink or ScrollLink based on link.type
               if (link.type === "route") {
                 return (
                   <RouterLink
@@ -69,7 +74,8 @@ function Navbar() {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="text-white hover:text-blue-400 cursor-pointer"
+                  className="text-white hover:text-blue-400 cursor-pointer px-4 py-2 text-left transition-colors" // Added classes for consistency
+                  onClick={() => setIsMobileMenuOpen(false)} // Close menu on scroll link click
                 >
                   {link.label}
                 </ScrollLink>

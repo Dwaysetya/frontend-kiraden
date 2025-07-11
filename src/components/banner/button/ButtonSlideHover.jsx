@@ -1,3 +1,5 @@
+import { LuArrowUpRight } from "react-icons/lu";
+
 const HoverSlideButton = ({ text = "Hover me", onClick }) => {
   return (
     <button
@@ -5,8 +7,9 @@ const HoverSlideButton = ({ text = "Hover me", onClick }) => {
       className="group relative inline-flex h-8 md:h-12 items-center justify-center overflow-hidden rounded-full border border-amber-500 font-medium"
     >
       {/* Layer awal (default state) */}
-      <div className="inline-flex h-8 md:h-12 translate-x-0 items-center justify-center bg-white px-2 md:px-6 text-neutral-950 transition group-hover:-translate-x-[150%]">
+      <div className="inline-flex h-8 md:h-12 translate-x-0 items-center justify-center bg-white px-2 md:px-6 text-neutral-950 transition group-hover:-translate-x-[150%] gap-2">
         {text}
+        <LuArrowUpRight />
       </div>
 
       {/* Layer saat hover */}

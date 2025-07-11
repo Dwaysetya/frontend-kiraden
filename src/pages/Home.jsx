@@ -6,28 +6,42 @@ import Section2 from "../../src/assets/section2/12 copy.png";
 import HoverSlideButton from "../components/banner/button/ButtonSlideHover";
 import CardsSection from "../components/CardSection";
 import { iconRespons } from "../utils/Constanta";
+import CardFaq from "../components/CardFaq";
+import CardKontak from "../components/CardKontak";
+import KabarBerita from "../components/KabarBerita";
+import Footer from "../components/Footer";
 
 function Home() {
   const renderIcon = () => {
     return (
       <>
-        <div className=" w-full mt-20 md:mt-2 flex relative justify-center items-center">
+        <div className="w-full md:mt-2 flex relative justify-center items-center">
           <div className="border-b-4 border-white w-full self-center"></div>
-          <div className="w-[80%] flex absolute p-5 bg-[#202020] h-auto rounded-full justify-center items-center border-r-2 border-l-2 border-white flex-wrap">
-            {iconRespons.map((item, index) => (
-              <div
-                className="w-auto flex h-auto justify-center items-center
-             basis-1/3 sm:basis-1/5 lg:basis-auto
-             mb-2 sm:mb-0"
-                key={index}
-              >
-                <img
-                  className="w-[80%] max-w-[40px] sm:max-w-[80px]"
-                  src={item.img}
-                  alt="icon"
-                />
-              </div>
-            ))}
+          <div className="w-[80%] md:justify-between flex absolute bg-[#202020] h-auto rounded-full justify-center items-center border-r-2 border-l-2 border-y border-white overflow-hidden">
+            {/* Container untuk scroll horizontal di mobile */}
+            <div className="flex md:flex-wrap px-2 py-3 md:p-5 w-full overflow-x-auto md:overflow-x-visible md:justify-between justify-start items-center gap-2 md:gap-0">
+              {iconRespons.map((item, index) => (
+                <div
+                  className="flex-shrink-0 w-auto flex p-1 md:p-0 h-auto justify-center items-center
+                   min-w-[50px] md:min-w-0
+                   md:basis-auto
+                   transition-all duration-300 ease-in-out
+                   hover:-translate-y-3 hover:scale-110 hover:drop-shadow-lg
+                   cursor-pointer
+                   group"
+                  key={index}
+                >
+                  <img
+                    className="w-[35px] sm:w-[45px] md:w-[80px] 
+                             max-w-[35px] sm:max-w-[45px] md:max-w-[80px]
+                             transition-all duration-300 ease-in-out
+                             group-hover:brightness-110"
+                    src={item.img}
+                    alt="icon"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </>
@@ -38,22 +52,26 @@ function Home() {
     <main
       className="w-full min-h-screen justify-center items-center bg-cover bg-center bg-no-repeat absolute inset-0 h-full object-contain object-center z-0"
       style={{ backgroundImage: `url(${Background})` }}
+      id="beranda"
     >
       <header>
         <Navbar />
       </header>
-      <section className="w-full pb-20">
+      <section className="w-full py-0 md:py-20">
         <Banner />
-        <div className="w-full px-5 md:px-20 flex justify-center items-center">
+        <div className="w-full px-5 md:px-20 flex justify-center items-center my-10">
           <div className="border-b-2 border-white w-[80%] md:w-150 self-center"></div>
         </div>
-        <div className="w-full md:px-18 pb-30 mt-20 md:mt-0">
+        <div
+          className="w-full md:px-18 pb-30 mt-20 md:mt-0"
+          id="galeri-section"
+        >
           <AutoCarousel />
         </div>
-        {renderIcon()}
+        <div className="my-50 md:my-20">{renderIcon()}</div>
       </section>
       <section
-        className="w-full min-h-[400px] md:min-h-screen mt-15"
+        className="w-full h-auto md:min-h-auto bg-amber-300 my-10"
         id="tentang"
       >
         <div className="w-full relative">
@@ -76,19 +94,42 @@ function Home() {
                 adiluhur warisan leluhur.
               </p>
             </div>
-            <div className="flex text-xs md:text-lg">
+            <div className="flex md:flex-row flex-col text-xs md:text-lg gap-5">
               <HoverSlideButton
                 text="Selengkapnya"
+                onClick={() => alert("Tombol diklik!")}
+              />
+              <HoverSlideButton
+                text="Struktur"
                 onClick={() => alert("Tombol diklik!")}
               />
             </div>
           </div>
         </div>
       </section>
-      <section>
+      <section className="w-full my-10" id="berita-section">
+        <KabarBerita />
+      </section>
+      <section id="program-kelas-section">
         <CardsSection />
       </section>
-      <footer></footer>
+      <section
+        className=" w-full flex flex-col justify-center items-center"
+        id="faq-section"
+      >
+        <div className="flex justify-center items-center mt-20">
+          <h1 className="text-md md:text-4xl font-bold text-white">
+            FAQ (Frequently Ask Questions)
+          </h1>
+        </div>
+        <CardFaq />
+      </section>
+      <section id="kontak-section">
+        <CardKontak />
+      </section>
+      <footer>
+        <Footer />
+      </footer>
     </main>
   );
 }
