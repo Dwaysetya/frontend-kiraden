@@ -16,7 +16,7 @@ function Footer() {
       {/* Logo di atas */}
       <div className="flex justify-center mb-10">
         <div className="text-center">
-          <Logo size="small" />
+          <Logo size="large" />
           <p className="mt-4 text-sm text-gray-400">
             Menyingkap ilmu yang tak terlihat
           </p>
@@ -82,31 +82,48 @@ function Footer() {
           {/* Social Media */}
           <div className="flex flex-col items-center md:items-end">
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-300 transition">
+            <div className="flex flex-col gap-2 items-end">
+              <a
+                href="#"
+                className="hover:text-amber-500 transition flex text-right gap-2"
+              >
+                <span>Sekolah paranormal</span>
                 <Facebook size={24} />
               </a>
-              <a href="#" className="hover:text-gray-300 transition">
+              <a
+                href="#"
+                className="hover:text-amber-500 transition flex text-right gap-2"
+              >
+                <span>Sekolah paranormal</span>
                 <Instagram size={24} />
               </a>
-              <a href="#" className="hover:text-gray-300 transition">
+              <a
+                href="#"
+                className="hover:text-amber-500 transition flex text-right gap-2"
+              >
+                <span>Sekolah paranormal</span>
                 <FaWhatsapp size={24} />
               </a>
-              <a href="#" className="hover:text-gray-300 transition">
+              <a
+                href="#"
+                className="hover:text-amber-500 transition flex text-right gap-2"
+              >
+                <span>Sekolah paranormal</span>
                 <Youtube size={24} />
               </a>
-              <a
+              {/* <a
                 href="mailto:contact@paranormalacademy.com"
-                className="hover:text-gray-300 transition"
+                className="hover:text-amber-500 transition flex text-right gap-2"
               >
+                <span>Sekolah paranormal</span>
                 <Mail size={24} />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
+        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm mb-15 md:mb-0">
           <p>
             &copy; {new Date().getFullYear()} Paranormal Academy. All rights
             reserved.

@@ -10,8 +10,14 @@ import CardFaq from "../components/CardFaq";
 import CardKontak from "../components/CardKontak";
 import KabarBerita from "../components/KabarBerita";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const Navigate = useNavigate();
+
+  const handleSelengkapnya = () => {
+    Navigate("/tentang-kami");
+  };
   const renderIcon = () => {
     return (
       <>
@@ -60,7 +66,7 @@ function Home() {
       <section className="w-full py-0 md:py-20">
         <Banner />
         <div className="w-full px-5 md:px-20 flex justify-center items-center my-10">
-          <div className="border-b-2 border-white w-[80%] md:w-150 self-center"></div>
+          <div className="border-b-2 border-white w-[80%] md:w-150 self-center" />
         </div>
         <div
           className="w-full md:px-18 pb-30 mt-20 md:mt-0"
@@ -97,11 +103,7 @@ function Home() {
             <div className="flex md:flex-row flex-col text-xs md:text-lg gap-5">
               <HoverSlideButton
                 text="Selengkapnya"
-                onClick={() => alert("Tombol diklik!")}
-              />
-              <HoverSlideButton
-                text="Struktur"
-                onClick={() => alert("Tombol diklik!")}
+                customOnClick={handleSelengkapnya}
               />
             </div>
           </div>

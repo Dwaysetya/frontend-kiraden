@@ -6,7 +6,7 @@ body {
   background-color: #202020;
 }
 .logo--small {
-  @apply h-[61px] flex items-center justify-center items-center;
+  @apply h-[61px] flex justify-center items-center;
 }
 
 .logo-img--small {
@@ -14,11 +14,11 @@ body {
 }
 
 .logo--large {
-  @apply w-[628px] h-[246px] flex items-center justify-center;
+  @apply w-full h-[146px] flex items-center justify-center;
 }
 
 .logo-img--large {
-  @apply w-[628px] h-[246px] object-contain;
+  @apply w-full h-[146px] object-contain;
 }
 .inputan{
   @apply w-full h-12 rounded-full bg-white/10 px-4 text-white placeholder-gray-400 border border-transparent focus:border-blue-500 focus:outline-none transition-all duration-200

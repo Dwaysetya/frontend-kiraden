@@ -88,7 +88,7 @@ function KabarBerita() {
                 <div
                   key={index}
                   className="bg-[#1e1e1e] p-6 rounded-lg shadow-md text-white flex flex-col gap-4
-                       w-[calc(25%-1.5rem)] min-w-[100%] md: snap-start"
+                       w-[calc(25%-1.5rem)] min-w-[100%] md:min-w-[22%] md: snap-start"
                 >
                   <div className="border-b-2 border-white w-full" />
                   <div className="text-sm text-gray-400">{item.tanggal}</div>

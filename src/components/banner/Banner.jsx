@@ -1,6 +1,8 @@
 import Foto from "../../assets/banner/FOTO.png";
 import Foto2 from "../../assets/banner/profile.jpeg";
+import ScrollToKontakButton from "./button/ButtonCustom";
 import ButtonCustom from "./button/ButtonCustom";
+import HoverSlideButton from "./button/ButtonSlideHover";
 
 function Banner() {
   return (
@@ -34,7 +36,10 @@ function Banner() {
                 </p>
               </div>
               <div className="flex justify-center md:justify-start">
-                <ButtonCustom />
+                <HoverSlideButton
+                  text="Kontak Kami"
+                  targetId="kontak-section"
+                />
               </div>
             </div>
             <div className="flex w-full md:w-[50%] justify-center md:justify-end items-center order-1 md:order-2 py-0 md:py-0">

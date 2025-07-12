@@ -1,90 +1,106 @@
-// navbar.jsx
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home as HomeIcon } from "lucide-react";
 import Logo from "../logo/Logo";
-import NavMenu from "./NavMenu";
-import { Link as RouterLink } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+import LogoMobile from "../../assets/images/navbar/image copy.png";
+import NavMenu from "./NavMenu"; // Komponen NavMenu yang sudah ada untuk desktop
+import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
+import { scroller } from "react-scroll";
+import MobileOverlayMenu from "./MobileOverlaymenu";
 
 const navLinks = [
-  { label: "BERANDA", to: "beranda", type: "scroll" }, // Assuming Beranda is always a route to home
-  { label: "GALERI", to: "galeri-section", type: "scroll" }, // Changed to scroll, assuming "galeri-section" is the ID of your gallery section
-  { label: "TENTANG KAMI", to: "/tentang-kami", type: "route" }, // Changed to route
-  { label: "BERITA", to: "berita-section", type: "scroll" }, // Changed to scroll
-  { label: "PROGRAM KELAS", to: "program-kelas-section", type: "scroll" }, // Changed to scroll
-  { label: "FAQ", to: "faq-section", type: "scroll" }, // Changed to scroll
-  { label: "KONTAK", to: "kontak-section", type: "scroll" }, // Changed to scroll
+  { label: "BERANDA", to: "beranda", type: "scroll" },
+  { label: "GALERI", to: "galeri-section", type: "scroll" },
+  { label: "TENTANG KAMI", to: "/tentang-kami", type: "route" },
+  { label: "BERITA", to: "berita-section", type: "scroll" },
+  { label: "PROGRAM KELAS", to: "program-kelas-section", type: "scroll" },
+  { label: "FAQ", to: "faq-section", type: "scroll" },
+  { label: "KONTAK", to: "kontak-section", type: "scroll" },
 ];
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const renderMobileMenuButton = () => (
-    <button
-      onClick={toggleMobileMenu}
-      className="md:hidden p-2 hover:bg-gray-800 rounded-lg transition-colors"
-      aria-label="Toggle mobile menu"
-    >
-      {isMobileMenuOpen ? (
-        <X className="w-6 h-6 text-[#9599a2]" />
-      ) : (
-        <Menu className="w-6 h-6 text-[#9599a2]" />
-      )}
-    </button>
-  );
+  // Handler untuk tombol "Beranda" di navbar mobile bawah
+  const handleBerandaClick = (e) => {
+    const berandaLink = navLinks.find((link) => link.label === "BERANDA");
+    if (berandaLink) {
+      if (location.pathname === "/") {
+        e.preventDefault(); // Mencegah RouterLink default behavior untuk '#'
+        scroller.scrollTo(berandaLink.to, {
+          smooth: true,
+          offset: -70,
+          duration: 500, // Gunakan durasi yang sama
+        });
+      } else {
+        navigate("/", { state: { scrollTo: berandaLink.to } });
+      }
+    }
+  };
 
   return (
-    <nav className="w-full md:fixed md:z-99 p-7 px-8 md:px-20 bg-black/30">
-      <div className="w-full flex justify-between items-center">
+    <>
+      {/* Navbar Desktop (Tetap di atas, hidden di mobile) */}
+      <nav className="hidden md:flex w-full md:fixed md:z-50 p-7 px-8 md:px-20 bg-black/30 justify-between items-center top-0">
         <div className="flex p-2 sm:flex-shrink-0 justify-start md:justify-center items-center">
-          <Logo size="small" />
+          <RouterLink to="/">
+            <Logo size="small" />
+          </RouterLink>
         </div>
-        <div className="hidden md:flex text-white justify-center items-center gap-5">
-          {/* Pass the navLinks to NavMenu */}
+        <div className="text-white flex justify-center items-center gap-5">
           <NavMenu links={navLinks} />
         </div>
-        {renderMobileMenuButton()}
-      </div>
-      {isMobileMenuOpen && (
-        <div className="md:hidden mt-4 py-4 border-t border-gray-800">
-          <div className="flex flex-col space-y-2">
-            {navLinks.map((link, index) => {
-              // Conditionally render RouterLink or ScrollLink based on link.type
-              if (link.type === "route") {
-                return (
-                  <RouterLink
-                    key={index}
-                    to={link.to}
-                    className="text-white hover:text-gray-300 px-4 py-2 text-left transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {link.label}
-                  </RouterLink>
-                );
-              }
-              return (
-                <ScrollLink
-                  key={index}
-                  to={link.to}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="text-white hover:text-blue-400 cursor-pointer px-4 py-2 text-left transition-colors" // Added classes for consistency
-                  onClick={() => setIsMobileMenuOpen(false)} // Close menu on scroll link click
-                >
-                  {link.label}
-                </ScrollLink>
-              );
-            })}
+      </nav>
+
+      {/* Navbar Mobile (Baru: di bawah, hidden di desktop) */}
+      <nav className="md:hidden fixed bottom-0 left-0 w-full bg-black/80 text-white py-3 px-4 z-50 shadow-lg border-t border-gray-700">
+        <div className="flex justify-between items-center h-12">
+          {/* Kiri: Logo */}
+          <div className="w-[10%] flex justify-center items-center">
+            <RouterLink to="/" onClick={() => setIsMobileMenuOpen(false)}>
+              <img src={LogoMobile} alt="" />
+            </RouterLink>
           </div>
+
+          {/* Tengah: Beranda / Home Icon */}
+          <RouterLink
+            to="/"
+            className="flex flex-col items-center text-sm font-medium text-amber-500" // Berikan warna aktif default
+            onClick={handleBerandaClick}
+          >
+            <HomeIcon className="w-6 h-6" />
+            <span>Beranda</span>
+          </RouterLink>
+
+          {/* Kanan: Tombol Hamburger Menu */}
+          <button
+            onClick={toggleMobileMenu}
+            className="p-2 text-white hover:bg-gray-700 rounded-lg"
+            aria-label="Toggle mobile menu"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" /> // Meskipun overlay punya X sendiri, ini bisa jadi indikator visual
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
         </div>
-      )}
-    </nav>
+      </nav>
+
+      {/* Overlay Menu Mobile (Muncul ketika hamburger diklik) */}
+      <MobileOverlayMenu
+        isOpen={isMobileMenuOpen}
+        onClose={toggleMobileMenu} // Fungsi untuk menutup overlay via tombol 'X' di dalamnya
+        navLinks={navLinks}
+        location={location}
+        navigate={navigate}
+      />
+    </>
   );
 }
 

@@ -1,38 +1,46 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// src/components/ScrollToKontakButton.jsx
+import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { scroller } from "react-scroll";
 
-const ButtonCustom = () => {
-  const [isClicked, setIsClicked] = useState(false);
+const ScrollToKontakButton = ({ children = "Kontak Kami", className = "" }) => {
+  const location = useLocation();
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    setIsClicked(true);
-    setTimeout(() => {
-      navigate("/");
-    }, 300);
+  const SCROLL_DURATION = 500; // Durasi scroll, sesuaikan dengan NavMenu Anda
+
+  const handleScrollToKontak = () => {
+    const targetId = "kontak-section"; // ID dari bagian kontak di halaman beranda
+
+    if (location.pathname !== "/") {
+      // Jika TIDAK di halaman utama, navigasi ke home dan kirim target scroll
+      navigate("/", { state: { scrollTo: targetId } });
+    } else {
+      // Jika SUDAH di halaman utama, langsung scroll
+      scroller.scrollTo(targetId, {
+        smooth: true,
+        offset: -70, // Sesuaikan dengan tinggi navbar Anda (misal: -70px)
+        duration: SCROLL_DURATION,
+      });
+    }
   };
 
   return (
-    <div className="relative w-42 h-12">
-      <button
-        className="w-full h-full bg-amber-500 text-white font-semibold rounded-full overflow-hidden flex items-center justify-endtransition-all duration-300 hover:bg-amber-600 focus:outline-none"
-        onClick={handleClick}
-      >
-        <div
-          className={`absolute top-0 p-3  left-0 h-full bg-[#202020] rounded-full transition-transform duration-300 ease-in-out ${
-            isClicked ? "translate-x-full" : "translate-x-0"
-          } w-1/2 z-0`}
-        >
-          Daftar
-        </div>
-        <span
-          className={`relative z-10 transition-opacity duration-300 ${
-            isClicked ? "opacity-0" : "opacity-100"
-          }`}
-        ></span>
-      </button>
-    </div>
+    <button
+      onClick={handleScrollToKontak}
+      className={`px-6 py-3 rounded-full font-semibold transition-opacity duration-300 ${className}`}
+      style={{
+        // Ini adalah properti yang benar untuk teks gradien
+        backgroundImage:
+          "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
+        WebkitBackgroundClip: "text", // Memotong background sesuai bentuk teks
+        // Membuat teks transparan agar background terlihat
+        backgroundClip: "text", // Standar W3C
+      }}
+    >
+      {children}
+    </button>
   );
 };
 
-export default ButtonCustom;
+export default ScrollToKontakButton;
