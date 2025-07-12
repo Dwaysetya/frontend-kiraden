@@ -10,6 +10,15 @@ import icon9 from "../../src/assets/icon/icon9.png";
 import icon10 from "../../src/assets/icon/icon10.png";
 import icon11 from "../../src/assets/icon/icon11.png";
 
+import slides1 from "../assets/header_slide/1.jpeg";
+import slides2 from "../assets/header_slide/2.jpeg";
+import slides3 from "../assets/header_slide/3.jpeg";
+import slides4 from "../assets/header_slide/4.jpeg";
+import slides5 from "../assets/header_slide/5.jpeg";
+import slides6 from "../assets/header_slide/6.jpeg";
+import slides7 from "../assets/header_slide/7.jpeg";
+import slides8 from "../assets/header_slide/8.jpeg";
+
 export const iconRespons = [
   {
     img: icon1,
@@ -150,5 +159,64 @@ export const answerQuestions = [
     questions: "Apakah menggunakan jin/Khodam?",
     answer:
       "Allahu akbar... Alhamdulillah di SPI lebih mengedepankan metode pembelajaran modern rasional ilmiah TANPA MENGUTAMAKAN jin Khodam dan sejenisnya. Berbasis olah pikir mengedepankan kekuatan pikiran alam bawah sadar yng murni mengalir alami dalam diri kita sendiri.",
+  },
+];
+
+export const slides = [
+  {
+    id: 1,
+    title: "Slide 1",
+    img: slides1,
+    color: "bg-red-500",
+    content: "Konten Pertama",
+  },
+  {
+    id: 2,
+    title: "Slide 2",
+    img: slides2,
+    color: "bg-blue-500",
+    content: "Konten Kedua",
+  },
+  {
+    id: 3,
+    title: "Slide 3",
+    img: slides3,
+    color: "bg-green-500",
+    content: "Konten Ketiga",
+  },
+  {
+    id: 4,
+    title: "Slide 4",
+    img: slides4,
+    color: "bg-yellow-500",
+    content: "Konten Keempat",
+  },
+  {
+    id: 5,
+    title: "Slide 5",
+    img: slides5,
+    color: "bg-purple-500",
+    content: "Konten Kelima",
+  },
+  {
+    id: 6,
+    title: "Slide 6",
+    img: slides6,
+    color: "bg-pink-500",
+    content: "Konten Keenam",
+  },
+  {
+    id: 7,
+    title: "Slide 7",
+    img: slides7,
+    color: "bg-indigo-500",
+    content: "Konten Ketujuh",
+  },
+  {
+    id: 8,
+    title: "Slide 8",
+    img: slides8,
+    color: "bg-teal-500",
+    content: "Konten Kedelapan",
   },
 ];

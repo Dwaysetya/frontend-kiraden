@@ -1,42 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { slides } from "../../../utils/Constanta";
 
 const AutoCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [
-    { id: 1, title: "Slide 1", color: "bg-red-500", content: "Konten Pertama" },
-    { id: 2, title: "Slide 2", color: "bg-blue-500", content: "Konten Kedua" },
-    {
-      id: 3,
-      title: "Slide 3",
-      color: "bg-green-500",
-      content: "Konten Ketiga",
-    },
-    {
-      id: 4,
-      title: "Slide 4",
-      color: "bg-yellow-500",
-      content: "Konten Keempat",
-    },
-    {
-      id: 5,
-      title: "Slide 5",
-      color: "bg-purple-500",
-      content: "Konten Kelima",
-    },
-    { id: 6, title: "Slide 6", color: "bg-pink-500", content: "Konten Keenam" },
-    {
-      id: 7,
-      title: "Slide 7",
-      color: "bg-indigo-500",
-      content: "Konten Ketujuh",
-    },
-    {
-      id: 8,
-      title: "Slide 8",
-      color: "bg-teal-500",
-      content: "Konten Kedelapan",
-    },
-  ];
 
   const getVisibleItems = () => {
     if (window.innerWidth < 640) return 1;
@@ -106,26 +72,27 @@ const AutoCarousel = () => {
               }`}
             >
               <div
-                className={`${slide.color} rounded-xl h-32 flex items-center justify-between text-white shadow-lg transform hover:scale-105 transition-all duration-300 px-4 sm:px-6`}
+                className={`${slide.color}  bg-cover bg-center bg-no-repeat rounded-xl h-32 flex items-center justify-between text-white shadow-lg transform hover:scale-105 transition-all duration-300 px-4 sm:px-6`}
+                style={{ backgroundImage: `url(${slide.img})` }}
               >
-                <div className="flex flex-col">
+                {/* <div className="flex flex-col">
                   <h3 className="text-lg sm:text-xl font-bold mb-1">
                     {slide.title}
                   </h3>
                   <p className="text-xs sm:text-sm">{slide.content}</p>
-                </div>
-                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center flex-shrink-0 ml-2">
+                </div> */}
+                {/* <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center flex-shrink-0 ml-2">
                   <span className="text-xs sm:text-sm font-bold">
                     {slide.id}
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
         </div>
         <button
           onClick={prevSlide}
-          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-1 sm:p-2 shadow-lg transition-all duration-200"
+          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-1 sm:p-2 shadow-lg transition-all duration-200"
         >
           <svg
             className="w-4 h-4 sm:w-6 sm:h-6 text-gray-800"
@@ -144,7 +111,7 @@ const AutoCarousel = () => {
 
         <button
           onClick={nextSlide}
-          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-1 sm:p-2 shadow-lg transition-all duration-200"
+          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-1 sm:p-2 shadow-lg transition-all duration-200"
         >
           <svg
             className="w-4 h-4 sm:w-6 sm:h-6 text-gray-800"
@@ -182,10 +149,10 @@ const AutoCarousel = () => {
       </div>
       <div className="mt-4 sm:mt-6 text-center">
         <p className="text-sm sm:text-base text-white">
-          Menampilkan slide {currentSlide + 1} dari {maxSlides} •
-          <span className="ml-2 text-xs sm:text-sm">
+          Menampilkan slide {currentSlide + 1} dari {maxSlides}
+          {/* <span className="ml-2 text-xs sm:text-sm">
             Tampilan: {visibleItems} kotak • Auto-slide setiap 3 detik
-          </span>
+          </span> */}
         </p>
       </div>
     </div>
