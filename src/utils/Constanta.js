@@ -19,6 +19,11 @@ import slides6 from "../assets/header_slide/6.jpeg";
 import slides7 from "../assets/header_slide/7.jpeg";
 import slides8 from "../assets/header_slide/8.jpeg";
 
+import tantang1 from "../assets/tentang_kami/1.jpeg";
+import tantang2 from "../assets/tentang_kami/2.jpeg";
+import tantang3 from "../assets/tentang_kami/3.jpeg";
+import tantang4 from "../assets/tentang_kami/4.jpeg";
+
 export const iconRespons = [
   {
     img: icon1,
@@ -220,3 +225,18 @@ export const slides = [
     content: "Konten Kedelapan",
   },
 ];
+
+ export const abouteGaleri = [
+   {
+     img: tantang1,
+   },
+   {
+     img: tantang2,
+   },
+   {
+     img: tantang3,
+   },
+   {
+     img: tantang4,
+   },
+ ];

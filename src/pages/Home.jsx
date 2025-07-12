@@ -87,17 +87,27 @@ function Home() {
             className="w-full h-auto object-cover"
           />
           <div className="absolute inset-0 flex sm:flex-col justify-center items-center sm:items-start gap-3 md:gap-5 px-4 py-1 md:p-10 lg:p-20 text-white">
-            <div className="flex flex-col gap-2 md:gap-5 w-full md:w-[40%] max-w-md">
+            <div className="flex flex-col gap-2 md:gap-5 w-full md:w-[70%] max-w-md">
               <p className="text-xs sm:text-sm md:text-lg lg:text-2xl">
-                SEKILAS SEKOLAH PARANORMAL
-              </p>
-              <h1 className="text-xl sm:text-3xl md:text-4xl font-bold">
                 Tentang Kami
+              </p>
+              <h1
+                className="text-xl sm:text-3xl md:text-4xl font-bold"
+                style={{
+                  background:
+                    "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                SEKILAS SEKOLAH PARANORMAL
               </h1>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg">
                 Didirikan pada tanggal 30 Mei 2024 oleh Rifki Rahmdani, Sekolah
                 Paranormal Indonesia hadir sebagai wadah pembelajaran ilmu-ilmu
-                adiluhur warisan leluhur.
+                adiluhung warisan leluhur yang menghubungkan kekuatan batin,
+                kesehatan holistik, dan kebijaksanaan metafisika.
               </p>
             </div>
             <div className="flex md:flex-row flex-col text-xs md:text-lg gap-5">
