@@ -145,7 +145,7 @@ function CardKontak() {
             </a>
           </div>
           <div className="flex items-center gap-5 text-white">
-            <GrLocation className="text-7xl md:text-5xl" />
+            <GrLocation className="text-5xl md:text-3xl" />
             <a
               href="https://maps.google.com/?q=alamat+lengkap+anda"
               target="_blank"
@@ -153,8 +153,7 @@ function CardKontak() {
               className="hover:underline"
             >
               Jl.AMD MANUNGGAL 10 , RT: 003 / RW: 02 - NO.151 KELURAHAN KEDAUNG
-              WETAN KEC.NEGLASARI KOTA TANGGERANG 15128. Patokan (Gg Teratai 2 ,
-              toko agen Andi Belakang RT agus)
+              WETAN KEC.NEGLASARI KOTA TANGGERANG 15128.
             </a>
           </div>
         </div>

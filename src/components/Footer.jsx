@@ -9,6 +9,12 @@ import {
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import Logo from "./logo/Logo";
+import { TfiEmail } from "react-icons/tfi";
+import { LuInstagram } from "react-icons/lu";
+import { FiYoutube } from "react-icons/fi";
+import { GrLocation } from "react-icons/gr";
+import { FaTiktok } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -28,52 +34,67 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* Contact Info */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-xl font-bold mb-4">Paranormal Academy</h3>
-            <p className="text-sm mb-2 flex items-center gap-2">
-              <MapPin size={16} /> 123 Mystical Lane, Shadow City
+            <h3 className="text-xl font-bold mb-4 text-amber-500">
+              Sekolah Paranormal
+            </h3>
+            <p className="text-sm mb-2 flex flex-col md:flex-row items-center gap-2">
+              <Phone size={16} /> 0851 3333 9854 / 0857 7161 8600
             </p>
-            <p className="text-sm mb-2 flex items-center gap-2">
-              <Phone size={16} /> (123) 456-7890
+            <p className="text-sm flex flex-col md:flex-row items-center gap-2">
+              <Mail size={16} /> sekolahparanormal@gmail.com
             </p>
-            <p className="text-sm flex items-center gap-2">
-              <Mail size={16} /> contact@paranormalacademy.com
+            <p className="text-xs mt-2 md:mt-4 flex flex-col md:flex-row items-center gap-2">
+              <GrLocation className="text-xl md:text-5xl" /> Jl.AMD MANUNGGAL 10
+              , RT: 003 / RW: 02 - NO.151 KELURAHAN KEDAUNG WETAN KEC.NEGLASARI
+              KOTA TANGGERANG 15128. Patokan (Gg Teratai 2 , toko agen Andi
+              Belakang RT agus)
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="flex flex-col items-center md:items-center">
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-xl font-bold mb-4 text-amber-500">
+              Quick Links
+            </h3>
+            <ul className="space-y-2 flex flex-col items-center">
               <li>
                 <a
-                  href="/about"
-                  className="text-sm hover:text-gray-300 transition"
+                  href="#galeri-section"
+                  className="text-sm hover:text-amber-500 transition"
                 >
-                  About Us
+                  Galeri
+                </a>
+              </li>
+              <li>
+                <Link
+                  to="/tentang-kami"
+                  className="text-sm hover:text-amber-500 transition"
+                >
+                  Tentang Kami
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="#berita-section"
+                  className="text-sm hover:text-amber-500 transition"
+                >
+                  Berita
                 </a>
               </li>
               <li>
                 <a
-                  href="/courses"
-                  className="text-sm hover:text-gray-300 transition"
+                  href="#program-kelas-section"
+                  className="text-sm hover:text-amber-500 transition"
                 >
-                  Courses
+                  Program Kelas
                 </a>
               </li>
               <li>
                 <a
-                  href="/events"
-                  className="text-sm hover:text-gray-300 transition"
+                  href="#kontak-section"
+                  className="text-sm hover:text-amber-500 transition"
                 >
-                  Events
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/contact"
-                  className="text-sm hover:text-gray-300 transition"
-                >
-                  Contact
+                  Kontak
                 </a>
               </li>
             </ul>
@@ -81,35 +102,31 @@ function Footer() {
 
           {/* Social Media */}
           <div className="flex flex-col items-center md:items-end">
-            <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-            <div className="flex flex-col gap-2 items-end">
+            <h3 className="text-xl font-bold mb-4 text-amber-500">Follow Us</h3>
+            <div className="flex gap-2 items-end">
               <a
-                href="#"
+                href="https://www.instagram.com/sekolah_paranormal?igsh=MWR6dXVrdDV5eGQ0OQ=="
                 className="hover:text-amber-500 transition flex text-right gap-2"
               >
-                <span>Sekolah paranormal</span>
-                <Facebook size={24} />
+                <LuInstagram size={24} />
+              </a>
+              <a
+                href="mailto:sekolahparanormal@gmail.com"
+                className="hover:text-amber-500 transition flex text-right gap-2"
+              >
+                <TfiEmail size={24} />
               </a>
               <a
                 href="#"
                 className="hover:text-amber-500 transition flex text-right gap-2"
               >
-                <span>Sekolah paranormal</span>
-                <Instagram size={24} />
+                <FiYoutube size={24} />
               </a>
               <a
-                href="#"
+                href="https://www.tiktok.com/@sekolahparanormal?_t=ZS-8xzFjysJeYj&_r=1"
                 className="hover:text-amber-500 transition flex text-right gap-2"
               >
-                <span>Sekolah paranormal</span>
-                <FaWhatsapp size={24} />
-              </a>
-              <a
-                href="#"
-                className="hover:text-amber-500 transition flex text-right gap-2"
-              >
-                <span>Sekolah paranormal</span>
-                <Youtube size={24} />
+                <FaTiktok size={24} />
               </a>
               {/* <a
                 href="mailto:contact@paranormalacademy.com"
@@ -125,7 +142,7 @@ function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm mb-15 md:mb-0">
           <p>
-            &copy; {new Date().getFullYear()} Paranormal Academy. All rights
+            &copy; {new Date().getFullYear()} Sekolah Paranormal. All rights
             reserved.
           </p>
         </div>
