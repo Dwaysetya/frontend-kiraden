@@ -22,8 +22,8 @@ function Home() {
     return (
       <>
         <div className="w-full md:mt-2 flex relative justify-center items-center">
-          <div className="border-b-4 border-white w-full self-center"></div>
-          <div className="w-[80%] md:justify-between flex absolute bg-[#202020] h-auto rounded-full justify-center items-center border-r-2 border-l-2 border-y border-white overflow-hidden">
+          <div className="border-b-4 border-amber-500 w-full self-center" />
+          <div className="w-[80%] md:justify-between flex absolute bg-[#202020] h-auto rounded-full justify-center items-center border-r-2 border-l-2 border-y border-amber-500 overflow-hidden">
             {/* Container untuk scroll horizontal di mobile */}
             <div className="flex md:flex-wrap px-2 py-3 md:p-5 w-full overflow-x-auto md:overflow-x-visible md:justify-between justify-start items-center gap-2 md:gap-0">
               {iconRespons.map((item, index) => (
@@ -92,7 +92,7 @@ function Home() {
                 Tentang Kami
               </p>
               <h1
-                className="text-xl sm:text-3xl md:text-4xl font-bold"
+                className="text-sm sm:text-3xl md:text-4xl font-bold"
                 style={{
                   background:
                     "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",

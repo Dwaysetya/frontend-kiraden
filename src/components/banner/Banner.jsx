@@ -24,7 +24,16 @@ function Banner() {
                 <h1 className="text-white text-2xl md:text-3xl">
                   Selamat datang di
                 </h1>
-                <h1 className="text-white text-4xl md:text-5xl font-extrabold tracking-wide">
+                <h1
+                  className=" text-4xl md:text-5xl font-extrabold tracking-wide"
+                  style={{
+                    background:
+                      "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
                   Sekolah Paranormal
                 </h1>
               </div>
