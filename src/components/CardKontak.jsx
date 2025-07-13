@@ -65,7 +65,7 @@ function CardKontak() {
     Mohon segera direspons. Terima kasih! 🙏`;
 
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = `628811414673`;
+    const phoneNumber = `6285133339854`;
     const whatsapUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsapUrl, `_blank`);
     alert(
@@ -93,19 +93,10 @@ function CardKontak() {
             </span>
           </h1>
           <p className="text-white">
-            Belajar di Sekolah Paranormal bukan sekadar hadir di kelas, tapi
-            juga kesiapan lahir dan batin.
-            <ul>
-              <li>Mulailah dengan :</li>
-              <li> - Adab </li>
-              <li>- Kecerdasan </li>
-              <li>- Niat yang lurus </li>
-              <li>- Kesungguhan </li>
-              <li>- Kesiapan Biaya </li>
-              <li>
-                - Hubungan yang dekat dengan guru Serta Istiqomah dalam proses
-              </li>
-            </ul>
+            Sekolah Paranormal Indonesia membuka ruang bagi siapa saja yang
+            ingin mempelajari ilmu spiritual dan kearifan leluhur. Tak perlu
+            trah atau sanad—cukup niat dan ketulusan untuk belajar dan
+            berkembang bersama.
           </p>
           <div className="flex items-center gap-5 text-white">
             <FaWhatsapp />
