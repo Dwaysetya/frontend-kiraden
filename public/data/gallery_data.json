@@ -1,0 +1,500 @@
+[
+  {
+    "id": 1,
+    "fileName": "galeri1.jpeg",
+    "src": "/galeri/galeri1.jpeg",
+    "alt": "Aktivitas Paranormal 1"
+  },
+  {
+    "id": 2,
+    "fileName": "galeri2.jpeg",
+    "src": "/galeri/galeri2.jpeg",
+    "alt": "Aktivitas Paranormal 2"
+  },
+  {
+    "id": 3,
+    "fileName": "galeri3.jpeg",
+    "src": "/galeri/galeri3.jpeg",
+    "alt": "Aktivitas Paranormal 3"
+  },
+  {
+    "id": 4,
+    "fileName": "galeri4.jpeg",
+    "src": "/galeri/galeri4.jpeg",
+    "alt": "Aktivitas Paranormal 4"
+  },
+  {
+    "id": 5,
+    "fileName": "galeri5.jpeg",
+    "src": "/galeri/galeri5.jpeg",
+    "alt": "Aktivitas Paranormal 5"
+  },
+  {
+    "id": 6,
+    "fileName": "galeri6.jpeg",
+    "src": "/galeri/galeri6.jpeg",
+    "alt": "Aktivitas Paranormal 6"
+  },
+  {
+    "id": 7,
+    "fileName": "galeri7.jpeg",
+    "src": "/galeri/galeri7.jpeg",
+    "alt": "Aktivitas Paranormal 7"
+  },
+  {
+    "id": 8,
+    "fileName": "galeri8.jpeg",
+    "src": "/galeri/galeri8.jpeg",
+    "alt": "Aktivitas Paranormal 8"
+  },
+  {
+    "id": 9,
+    "fileName": "galeri9.jpeg",
+    "src": "/galeri/galeri9.jpeg",
+    "alt": "Aktivitas Paranormal 9"
+  },
+  {
+    "id": 10,
+    "fileName": "galeri10.jpeg",
+    "src": "/galeri/galeri10.jpeg",
+    "alt": "Aktivitas Paranormal 10"
+  },
+  {
+    "id": 11,
+    "fileName": "galeri11.jpeg",
+    "src": "/galeri/galeri11.jpeg",
+    "alt": "Aktivitas Paranormal 11"
+  },
+  {
+    "id": 12,
+    "fileName": "galeri12.jpeg",
+    "src": "/galeri/galeri12.jpeg",
+    "alt": "Aktivitas Paranormal 12"
+  },
+  {
+    "id": 13,
+    "fileName": "galeri13.jpeg",
+    "src": "/galeri/galeri13.jpeg",
+    "alt": "Aktivitas Paranormal 13"
+  },
+  {
+    "id": 14,
+    "fileName": "galeri14.jpeg",
+    "src": "/galeri/galeri14.jpeg",
+    "alt": "Aktivitas Paranormal 14"
+  },
+  {
+    "id": 15,
+    "fileName": "galeri15.jpeg",
+    "src": "/galeri/galeri15.jpeg",
+    "alt": "Aktivitas Paranormal 15"
+  },
+  {
+    "id": 16,
+    "fileName": "galeri16.jpeg",
+    "src": "/galeri/galeri16.jpeg",
+    "alt": "Aktivitas Paranormal 16"
+  },
+  {
+    "id": 17,
+    "fileName": "galeri17.jpeg",
+    "src": "/galeri/galeri17.jpeg",
+    "alt": "Aktivitas Paranormal 17"
+  },
+  {
+    "id": 18,
+    "fileName": "galeri18.jpeg",
+    "src": "/galeri/galeri18.jpeg",
+    "alt": "Aktivitas Paranormal 18"
+  },
+  {
+    "id": 19,
+    "fileName": "galeri19.jpeg",
+    "src": "/galeri/galeri19.jpeg",
+    "alt": "Aktivitas Paranormal 19"
+  },
+  {
+    "id": 20,
+    "fileName": "galeri20.jpeg",
+    "src": "/galeri/galeri20.jpeg",
+    "alt": "Aktivitas Paranormal 20"
+  },
+  {
+    "id": 21,
+    "fileName": "galeri21.jpeg",
+    "src": "/galeri/galeri21.jpeg",
+    "alt": "Aktivitas Paranormal 21"
+  },
+  {
+    "id": 22,
+    "fileName": "galeri22.jpeg",
+    "src": "/galeri/galeri22.jpeg",
+    "alt": "Aktivitas Paranormal 22"
+  },
+  {
+    "id": 23,
+    "fileName": "galeri23.jpeg",
+    "src": "/galeri/galeri23.jpeg",
+    "alt": "Aktivitas Paranormal 23"
+  },
+  {
+    "id": 24,
+    "fileName": "galeri24.jpeg",
+    "src": "/galeri/galeri24.jpeg",
+    "alt": "Aktivitas Paranormal 24"
+  },
+  {
+    "id": 25,
+    "fileName": "galeri25.jpeg",
+    "src": "/galeri/galeri25.jpeg",
+    "alt": "Aktivitas Paranormal 25"
+  },
+  {
+    "id": 26,
+    "fileName": "galeri26.jpeg",
+    "src": "/galeri/galeri26.jpeg",
+    "alt": "Aktivitas Paranormal 26"
+  },
+  {
+    "id": 27,
+    "fileName": "galeri27.jpeg",
+    "src": "/galeri/galeri27.jpeg",
+    "alt": "Aktivitas Paranormal 27"
+  },
+  {
+    "id": 28,
+    "fileName": "galeri28.jpeg",
+    "src": "/galeri/galeri28.jpeg",
+    "alt": "Aktivitas Paranormal 28"
+  },
+  {
+    "id": 29,
+    "fileName": "galeri29.jpeg",
+    "src": "/galeri/galeri29.jpeg",
+    "alt": "Aktivitas Paranormal 29"
+  },
+  {
+    "id": 30,
+    "fileName": "galeri30.jpeg",
+    "src": "/galeri/galeri30.jpeg",
+    "alt": "Aktivitas Paranormal 30"
+  },
+  {
+    "id": 31,
+    "fileName": "galeri31.jpeg",
+    "src": "/galeri/galeri31.jpeg",
+    "alt": "Aktivitas Paranormal 31"
+  },
+  {
+    "id": 32,
+    "fileName": "galeri32.jpeg",
+    "src": "/galeri/galeri32.jpeg",
+    "alt": "Aktivitas Paranormal 32"
+  },
+  {
+    "id": 33,
+    "fileName": "galeri33.jpeg",
+    "src": "/galeri/galeri33.jpeg",
+    "alt": "Aktivitas Paranormal 33"
+  },
+  {
+    "id": 34,
+    "fileName": "galeri34.jpeg",
+    "src": "/galeri/galeri34.jpeg",
+    "alt": "Aktivitas Paranormal 34"
+  },
+  {
+    "id": 35,
+    "fileName": "galeri35.jpeg",
+    "src": "/galeri/galeri35.jpeg",
+    "alt": "Aktivitas Paranormal 35"
+  },
+  {
+    "id": 36,
+    "fileName": "galeri36.jpeg",
+    "src": "/galeri/galeri36.jpeg",
+    "alt": "Aktivitas Paranormal 36"
+  },
+  {
+    "id": 37,
+    "fileName": "galeri37.jpeg",
+    "src": "/galeri/galeri37.jpeg",
+    "alt": "Aktivitas Paranormal 37"
+  },
+  {
+    "id": 38,
+    "fileName": "galeri38.jpeg",
+    "src": "/galeri/galeri38.jpeg",
+    "alt": "Aktivitas Paranormal 38"
+  },
+  {
+    "id": 39,
+    "fileName": "galeri39.jpeg",
+    "src": "/galeri/galeri39.jpeg",
+    "alt": "Aktivitas Paranormal 39"
+  },
+  {
+    "id": 40,
+    "fileName": "galeri40.jpeg",
+    "src": "/galeri/galeri40.jpeg",
+    "alt": "Aktivitas Paranormal 40"
+  },
+  {
+    "id": 41,
+    "fileName": "galeri41.jpeg",
+    "src": "/galeri/galeri41.jpeg",
+    "alt": "Aktivitas Paranormal 41"
+  },
+  {
+    "id": 42,
+    "fileName": "galeri42.jpeg",
+    "src": "/galeri/galeri42.jpeg",
+    "alt": "Aktivitas Paranormal 42"
+  },
+  {
+    "id": 43,
+    "fileName": "galeri43.jpeg",
+    "src": "/galeri/galeri43.jpeg",
+    "alt": "Aktivitas Paranormal 43"
+  },
+  {
+    "id": 44,
+    "fileName": "galeri44.jpeg",
+    "src": "/galeri/galeri44.jpeg",
+    "alt": "Aktivitas Paranormal 44"
+  },
+  {
+    "id": 45,
+    "fileName": "galeri45.jpeg",
+    "src": "/galeri/galeri45.jpeg",
+    "alt": "Aktivitas Paranormal 45"
+  },
+  {
+    "id": 46,
+    "fileName": "galeri46.jpeg",
+    "src": "/galeri/galeri46.jpeg",
+    "alt": "Aktivitas Paranormal 46"
+  },
+  {
+    "id": 47,
+    "fileName": "galeri47.jpeg",
+    "src": "/galeri/galeri47.jpeg",
+    "alt": "Aktivitas Paranormal 47"
+  },
+  {
+    "id": 48,
+    "fileName": "galeri48.jpeg",
+    "src": "/galeri/galeri48.jpeg",
+    "alt": "Aktivitas Paranormal 48"
+  },
+  {
+    "id": 49,
+    "fileName": "galeri49.jpeg",
+    "src": "/galeri/galeri49.jpeg",
+    "alt": "Aktivitas Paranormal 49"
+  },
+  {
+    "id": 50,
+    "fileName": "galeri50.jpeg",
+    "src": "/galeri/galeri50.jpeg",
+    "alt": "Aktivitas Paranormal 50"
+  },
+  {
+    "id": 51,
+    "fileName": "galeri51.jpeg",
+    "src": "/galeri/galeri51.jpeg",
+    "alt": "Aktivitas Paranormal 51"
+  },
+  {
+    "id": 52,
+    "fileName": "galeri52.jpeg",
+    "src": "/galeri/galeri52.jpeg",
+    "alt": "Aktivitas Paranormal 52"
+  },
+  {
+    "id": 53,
+    "fileName": "galeri53.jpeg",
+    "src": "/galeri/galeri53.jpeg",
+    "alt": "Aktivitas Paranormal 53"
+  },
+  {
+    "id": 54,
+    "fileName": "galeri54.jpeg",
+    "src": "/galeri/galeri54.jpeg",
+    "alt": "Aktivitas Paranormal 54"
+  },
+  {
+    "id": 55,
+    "fileName": "galeri55.jpeg",
+    "src": "/galeri/galeri55.jpeg",
+    "alt": "Aktivitas Paranormal 55"
+  },
+  {
+    "id": 56,
+    "fileName": "galeri56.jpeg",
+    "src": "/galeri/galeri56.jpeg",
+    "alt": "Aktivitas Paranormal 56"
+  },
+  {
+    "id": 57,
+    "fileName": "galeri57.jpeg",
+    "src": "/galeri/galeri57.jpeg",
+    "alt": "Aktivitas Paranormal 57"
+  },
+  {
+    "id": 58,
+    "fileName": "galeri58.jpeg",
+    "src": "/galeri/galeri58.jpeg",
+    "alt": "Aktivitas Paranormal 58"
+  },
+  {
+    "id": 59,
+    "fileName": "galeri59.jpeg",
+    "src": "/galeri/galeri59.jpeg",
+    "alt": "Aktivitas Paranormal 59"
+  },
+  {
+    "id": 60,
+    "fileName": "galeri60.jpeg",
+    "src": "/galeri/galeri60.jpeg",
+    "alt": "Aktivitas Paranormal 60"
+  },
+  {
+    "id": 61,
+    "fileName": "galeri61.jpeg",
+    "src": "/galeri/galeri61.jpeg",
+    "alt": "Aktivitas Paranormal 61"
+  },
+  {
+    "id": 62,
+    "fileName": "galeri62.jpeg",
+    "src": "/galeri/galeri62.jpeg",
+    "alt": "Aktivitas Paranormal 62"
+  },
+  {
+    "id": 63,
+    "fileName": "galeri63.jpeg",
+    "src": "/galeri/galeri63.jpeg",
+    "alt": "Aktivitas Paranormal 63"
+  },
+  {
+    "id": 64,
+    "fileName": "galeri64.jpeg",
+    "src": "/galeri/galeri64.jpeg",
+    "alt": "Aktivitas Paranormal 64"
+  },
+  {
+    "id": 65,
+    "fileName": "galeri65.jpeg",
+    "src": "/galeri/galeri65.jpeg",
+    "alt": "Aktivitas Paranormal 65"
+  },
+  {
+    "id": 66,
+    "fileName": "galeri66.jpeg",
+    "src": "/galeri/galeri66.jpeg",
+    "alt": "Aktivitas Paranormal 66"
+  },
+  {
+    "id": 67,
+    "fileName": "galeri67.jpeg",
+    "src": "/galeri/galeri67.jpeg",
+    "alt": "Aktivitas Paranormal 67"
+  },
+  {
+    "id": 68,
+    "fileName": "galeri68.jpeg",
+    "src": "/galeri/galeri68.jpeg",
+    "alt": "Aktivitas Paranormal 68"
+  },
+  {
+    "id": 69,
+    "fileName": "galeri69.jpeg",
+    "src": "/galeri/galeri69.jpeg",
+    "alt": "Aktivitas Paranormal 69"
+  },
+  {
+    "id": 70,
+    "fileName": "galeri70.jpeg",
+    "src": "/galeri/galeri70.jpeg",
+    "alt": "Aktivitas Paranormal 70"
+  },
+  {
+    "id": 71,
+    "fileName": "galeri71.jpeg",
+    "src": "/galeri/galeri71.jpeg",
+    "alt": "Aktivitas Paranormal 71"
+  },
+  {
+    "id": 72,
+    "fileName": "galeri72.jpeg",
+    "src": "/galeri/galeri72.jpeg",
+    "alt": "Aktivitas Paranormal 72"
+  },
+  {
+    "id": 73,
+    "fileName": "galeri73.jpeg",
+    "src": "/galeri/galeri73.jpeg",
+    "alt": "Aktivitas Paranormal 73"
+  },
+  {
+    "id": 74,
+    "fileName": "galeri74.jpeg",
+    "src": "/galeri/galeri74.jpeg",
+    "alt": "Aktivitas Paranormal 74"
+  },
+  {
+    "id": 75,
+    "fileName": "galeri75.jpeg",
+    "src": "/galeri/galeri75.jpeg",
+    "alt": "Aktivitas Paranormal 75"
+  },
+  {
+    "id": 76,
+    "fileName": "galeri76.jpeg",
+    "src": "/galeri/galeri76.jpeg",
+    "alt": "Aktivitas Paranormal 76"
+  },
+  {
+    "id": 77,
+    "fileName": "galeri77.jpeg",
+    "src": "/galeri/galeri77.jpeg",
+    "alt": "Aktivitas Paranormal 77"
+  },
+  {
+    "id": 78,
+    "fileName": "galeri78.jpeg",
+    "src": "/galeri/galeri78.jpeg",
+    "alt": "Aktivitas Paranormal 78"
+  },
+  {
+    "id": 79,
+    "fileName": "galeri79.jpeg",
+    "src": "/galeri/galeri79.jpeg",
+    "alt": "Aktivitas Paranormal 79"
+  },
+  {
+    "id": 80,
+    "fileName": "galeri80.jpeg",
+    "src": "/galeri/galeri80.jpeg",
+    "alt": "Aktivitas Paranormal 80"
+  },
+  {
+    "id": 81,
+    "fileName": "galeri81.jpeg",
+    "src": "/galeri/galeri81.jpeg",
+    "alt": "Aktivitas Paranormal 81"
+  },
+  {
+    "id": 82,
+    "fileName": "galeri82.jpeg",
+    "src": "/galeri/galeri82.jpeg",
+    "alt": "Aktivitas Paranormal 82"
+  },
+  {
+    "id": 83,
+    "fileName": "galeri83.jpeg",
+    "src": "/galeri/galeri83.jpeg",
+    "alt": "Aktivitas Paranormal 83"
+  }
+]

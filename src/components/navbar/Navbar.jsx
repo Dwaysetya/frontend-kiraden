@@ -9,7 +9,7 @@ import MobileOverlayMenu from "./MobileOverlaymenu";
 
 const navLinks = [
   { label: "BERANDA", to: "beranda", type: "scroll" },
-  { label: "GALERI", to: "galeri-section", type: "scroll" },
+  { label: "GALERI", to: "/galeri", type: "route" },
   { label: "TENTANG KAMI", to: "/tentang-kami", type: "route" },
   { label: "BERITA", to: "berita-section", type: "scroll" },
   { label: "PROGRAM KELAS", to: "program-kelas-section", type: "scroll" },

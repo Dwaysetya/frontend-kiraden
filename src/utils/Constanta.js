@@ -42,6 +42,8 @@ import MembukaCabang from "../assets/program_kelas/Icon Membuka Cabang.png";
 import Legalitas from "../assets/program_kelas/Icon Perizinan Legalitas.png";
 import Sertifikat from "../assets/program_kelas/Icon Membuat Sertifikat.png";
 
+
+
 export const iconRespons = [
   {
     img: icon1,
@@ -479,3 +481,9 @@ export const isiKabar = [
   //    foto: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
   //  },
 ];
+
+// export const renderGaleri = [
+//   {
+//     foto: Galery1,
+//   },
+// ];
