@@ -1,6 +1,7 @@
 import React from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { answerQuestions } from "../utils/Constanta";
+import FadeInOnScroll from "../animation/background/FadeInScroll";
 
 function CardFaq() {
   const [isOpen, setIsOpen] = React.useState(null);
@@ -37,7 +38,9 @@ function CardFaq() {
               }}
             >
               <div className="self-center px-7 md:px-0">
-                <h1 className="text-md md:text-xl">{item.questions}</h1>
+                <FadeInOnScroll once={false}>
+                  <h1 className="text-sm md:text-xl">{item.questions}</h1>
+                </FadeInOnScroll>
               </div>
               <div
                 className="self-center text-l md:text-2xl px-3 md:px-0"
@@ -49,7 +52,9 @@ function CardFaq() {
             {isOpen === i && (
               <div className="bg-white p-5 w-full">
                 <div className="px-5">
-                  <h1>{item.answer}</h1>
+                  <FadeInOnScroll once={false}>
+                    <h1>{item.answer}</h1>
+                  </FadeInOnScroll>
                 </div>
               </div>
             )}

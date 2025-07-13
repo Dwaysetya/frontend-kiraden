@@ -11,6 +11,7 @@ import CardKontak from "../components/CardKontak";
 import KabarBerita from "../components/KabarBerita";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
+import FadeInOnScroll from "../animation/background/FadeInScroll";
 
 function Home() {
   const Navigate = useNavigate();
@@ -74,50 +75,55 @@ function Home() {
         >
           <AutoCarousel />
         </div>
-        <div className="mb-35 md:my-20">{renderIcon()}</div>
+        <FadeInOnScroll once={false}>
+          <div className="mb-35 md:my-20">{renderIcon()}</div>
+        </FadeInOnScroll>
       </section>
       <section
         className="w-full h-auto md:min-h-auto bg-amber-300 my-10"
         id="tentang"
       >
-        <div className="w-full relative">
-          <img
-            src={Section2}
-            alt="Section Background"
-            className="w-full h-auto object-cover"
-          />
-          <div className="absolute inset-0 flex sm:flex-col justify-center items-center sm:items-start gap-3 md:gap-5 px-4 py-1 md:p-10 lg:p-20 text-white">
-            <div className="flex flex-col gap-2 md:gap-5 w-full md:w-[70%] max-w-md">
-              <p className="text-xs hidden md:flex sm:text-sm md:text-lg lg:text-2xl">
-                Tentang Kami
-              </p>
-              <h1
-                className="text-xs sm:text-3xl md:text-4xl font-bold"
-                style={{
-                  background:
-                    "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-                SEKILAS SEKOLAH PARANORMAL
-              </h1>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg">
-                Didirikan pada tanggal 30 Mei 2024 oleh Rifki Rahmdani, Sekolah
-                Paranormal Indonesia hadir sebagai wadah pembelajaran ilmu-ilmu
-                adiluhung warisan leluhur yang menghubungkan kekuatan batin,
-                kesehatan holistik, dan kebijaksanaan metafisika.
-              </p>
-            </div>
-            <div className="flex md:flex-row flex-col text-xs md:text-lg gap-5">
-              <HoverSlideButton
-                text="Selengkapnya"
-                customOnClick={handleSelengkapnya}
-              />
+        <FadeInOnScroll once={false}>
+          <div className="w-full relative">
+            <img
+              src={Section2}
+              alt="Section Background"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 flex sm:flex-col justify-center items-center sm:items-start gap-3 md:gap-5 px-4 py-1 md:p-10 lg:p-20 text-white">
+              <div className="flex flex-col gap-2 md:gap-5 w-full md:w-[80%] max-w-md">
+                <p className="text-xs hidden md:flex sm:text-sm md:text-lg lg:text-2xl">
+                  Tentang Kami
+                </p>
+                <h1
+                  className="text-xs sm:text-3xl md:text-4xl font-bold"
+                  style={{
+                    background:
+                      "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
+                  SEKILAS SEKOLAH PARANORMAL
+                </h1>
+                <p className="text-xs sm:text-sm md:text-base lg:text-lg">
+                  Didirikan pada tanggal 30 Mei 2024 oleh Rifki Rahmdani,
+                  Sekolah Paranormal Indonesia hadir sebagai wadah pembelajaran
+                  ilmu-ilmu adiluhung warisan leluhur yang menghubungkan
+                  kekuatan batin, kesehatan holistik, dan kebijaksanaan
+                  metafisika.
+                </p>
+              </div>
+              <div className="flex md:flex-row flex-col text-xs md:text-lg gap-5">
+                <HoverSlideButton
+                  text="Selengkapnya"
+                  customOnClick={handleSelengkapnya}
+                />
+              </div>
             </div>
           </div>
-        </div>
+        </FadeInOnScroll>
       </section>
       <section className="w-full my-10" id="berita-section">
         <KabarBerita />
@@ -129,11 +135,13 @@ function Home() {
         className=" w-full flex flex-col justify-center items-center"
         id="faq-section"
       >
-        <div className="flex justify-center items-center mt-20">
-          <h1 className="text-md md:text-4xl font-bold text-white">
-            FAQ (Frequently Ask Questions)
-          </h1>
-        </div>
+        <FadeInOnScroll once={false}>
+          <div className="flex justify-center items-center mt-20">
+            <h1 className="text-md md:text-4xl font-bold text-white">
+              FAQ (Frequently Ask Questions)
+            </h1>
+          </div>
+        </FadeInOnScroll>
         <CardFaq />
       </section>
       <section id="kontak-section">

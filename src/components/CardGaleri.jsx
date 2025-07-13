@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import FadeInOnScroll from "../animation/background/FadeInScroll";
 
 function CardGallery() {
   const [galeri, setGaleri] = useState([]);
@@ -21,9 +22,11 @@ function CardGallery() {
 
   return (
     <div className="min-h-screen bg-[#202020] text-white px-6 py-12">
-      <h1 className="text-3xl md:text-5xl text-center font-serif text-white mb-10 tracking-wider">
-        ✦ Paranormal Gallery ✦
-      </h1>
+      <FadeInOnScroll once={false}>
+        <h1 className="text-2xl md:text-5xl text-center font-serif text-white mb-10 tracking-wider">
+          ✦ Paranormal Gallery ✦
+        </h1>
+      </FadeInOnScroll>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {galeri.slice(OFFSET, OFFSET + LIMIT).map((image, index) => (
@@ -36,11 +39,13 @@ function CardGallery() {
             transition={{ delay: index * 0.1 }}
             onClick={() => setSelectedImg(image.src)}
           >
-            <img
-              src={image.src}
-              alt={image.alt || `Paranormal activity ${index + 1}`}
-              className="w-full h-64 object-cover group-hover:brightness-75 transition duration-300"
-            />
+            <FadeInOnScroll once={false}>
+              <img
+                src={image.src}
+                alt={image.alt || `Paranormal activity ${index + 1}`}
+                className="w-full h-64 object-cover group-hover:brightness-75 transition duration-300"
+              />
+            </FadeInOnScroll>
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 group-hover:opacity-100 transition duration-300">
               Klik untuk perbesar
             </div>
@@ -86,13 +91,13 @@ function CardGallery() {
       {/* ✅ Modal Preview */}
       {selectedImg && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
-          onClick={() => setSelectedImg(null)} // ✅ tutup modal
+          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 px-4"
+          onClick={() => setSelectedImg(null)}
         >
           <motion.img
             src={selectedImg}
             alt="Preview"
-            className="max-w-3xl max-h-[80vh] rounded-xl border-4 border-yellow-600 shadow-lg"
+            className="w-full max-w-3xl max-h-[80vh] object-contain rounded-xl border-4 border-yellow-600 shadow-lg"
             initial={{ scale: 0.5, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
           />

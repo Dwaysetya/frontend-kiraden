@@ -17,8 +17,7 @@ const MobileOverlayMenu = ({
 
   return (
     // UBAH KELAS DI SINI:
-    <div className="fixed bottom-0 left-0 w-full h-1/4 bg-black/90 z-[999] flex flex-col items-center justify-start p-4 rounded-t-lg">
-      {/* Tombol Tutup (X) di pojok kanan atas overlay */}
+    <div className="fixed bottom-0 left-0 w-full h-2/5 bg-black/90 z-[999] flex flex-col items-center justify-start p-4 rounded-t-lg">
       <button
         onClick={onClose}
         className="absolute top-2 right-2 p-1 text-white hover:bg-gray-800 rounded-lg" // Sesuaikan padding/ukuran jika perlu

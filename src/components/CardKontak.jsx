@@ -8,6 +8,7 @@ import { FaTiktok } from "react-icons/fa";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import * as yup from "yup";
+import FadeInOnScroll from "../animation/background/FadeInScroll";
 
 const validationSchema = yup.object({
   name: yup.string().required("Nama wajib diisi"),
@@ -77,85 +78,101 @@ function CardKontak() {
     <section className="w-full h-auto flex justify-center items-center bg-white/10">
       <div className="w-full flex flex-col md:flex-row justify-center items-center py-5 md:p-20 gap-10">
         <div className=" flex flex-col w-[90%] md:w-[50%] gap-3">
-          <h1 className="flex flex-col text-white">
-            Kontak Kami{" "}
-            <span
-              className="text-2xl md:text-5xl font-bold"
-              style={{
-                background:
-                  "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}
-            >
-              Mari Bergabung Dengan Kami
-            </span>
-          </h1>
-          <p className="text-white">
-            Sekolah Paranormal Indonesia membuka ruang bagi siapa saja yang
-            ingin mempelajari ilmu spiritual dan kearifan leluhur. Tak perlu
-            trah atau sanad—cukup niat dan ketulusan untuk belajar dan
-            berkembang bersama.
-          </p>
-          <div className="flex items-center gap-5 text-white">
-            <FaWhatsapp />
-            <span>0851 3333 9854 / 0857 7161 8600</span>
-          </div>
-          <div className="flex items-center gap-5 text-white">
-            <TfiEmail />
-            <a
-              href="mailto:sekolahparanormal@gmail.com"
-              className="hover:underline"
-            >
-              sekolahparanormal@gmail.com
-            </a>
-          </div>
-          <div className="flex items-center gap-5 text-white">
-            <LuInstagram />
-            <a
-              href="https://www.instagram.com/sekolah_paranormal?igsh=MWR6dXVrdDV5eGQ0OQ=="
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              sekolahparanormal
-            </a>
-          </div>
-          <div className="flex items-center gap-5 text-white">
-            <FiYoutube />
-            <a
-              href="https://youtube.com/@kiradensuryamudana15?si=lAjwo0SVoHxHiKaD"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              sekolahparanormal
-            </a>
-          </div>
-          <div className="flex items-center gap-5 text-white">
-            <FaTiktok />
-            <a
-              href="https://www.tiktok.com/@sekolahparanormal?_t=ZS-8xzFjysJeYj&_r=1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              sekolah paranormal
-            </a>
-          </div>
-          <div className="flex items-center gap-5 text-white">
-            <GrLocation className="text-5xl md:text-3xl" />
-            <a
-              href="https://www.google.com/maps/place/Pendopo+Agung+SPI/@-6.0880153,106.6389176,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6a030008da3017:0x9cb1f02c470248fc!8m2!3d-6.0880153!4d106.6414925!16s%2Fg%2F11wjmkzjm1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              Jl.AMD MANUNGGAL 10 , RT: 003 / RW: 02 - NO.151 KELURAHAN KEDAUNG
-              WETAN KEC.NEGLASARI KOTA TANGGERANG 15128.
-            </a>
-          </div>
+          <FadeInOnScroll once={false}>
+            <h1 className="flex flex-col text-white">
+              Kontak Kami{" "}
+              <span
+                className="text-2xl md:text-5xl font-bold"
+                style={{
+                  background:
+                    "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                Mari Bergabung Dengan Kami
+              </span>
+            </h1>
+          </FadeInOnScroll>
+          <FadeInOnScroll once={false}>
+            <p className="text-white">
+              Sekolah Paranormal Indonesia membuka ruang bagi siapa saja yang
+              ingin mempelajari ilmu spiritual dan kearifan leluhur. Tak perlu
+              trah atau sanad—cukup niat dan ketulusan untuk belajar dan
+              berkembang bersama.
+            </p>
+          </FadeInOnScroll>
+          <FadeInOnScroll once={false}>
+            <div className="flex items-center gap-5 text-white">
+              <FaWhatsapp />
+              <span>0851 3333 9854 / 0857 7161 8600</span>
+            </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll once={false}>
+            <div className="flex items-center gap-5 text-white">
+              <TfiEmail />
+              <a
+                href="mailto:sekolahparanormal@gmail.com"
+                className="hover:underline"
+              >
+                sekolahparanormal@gmail.com
+              </a>
+            </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll once={false}>
+            <div className="flex items-center gap-5 text-white">
+              <LuInstagram />
+              <a
+                href="https://www.instagram.com/sekolah_paranormal?igsh=MWR6dXVrdDV5eGQ0OQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                sekolahparanormal
+              </a>
+            </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll once={false}>
+            <div className="flex items-center gap-5 text-white">
+              <FiYoutube />
+              <a
+                href="https://youtube.com/@kiradensuryamudana15?si=lAjwo0SVoHxHiKaD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                sekolahparanormal
+              </a>
+            </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll once={false}>
+            <div className="flex items-center gap-5 text-white">
+              <FaTiktok />
+              <a
+                href="https://www.tiktok.com/@sekolahparanormal?_t=ZS-8xzFjysJeYj&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                sekolah paranormal
+              </a>
+            </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll once={false}>
+            <div className="flex items-center gap-5 text-white">
+              <GrLocation className="text-5xl md:text-3xl" />
+              <a
+                href="https://www.google.com/maps/place/Pendopo+Agung+SPI/@-6.0880153,106.6389176,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6a030008da3017:0x9cb1f02c470248fc!8m2!3d-6.0880153!4d106.6414925!16s%2Fg%2F11wjmkzjm1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Jl.AMD MANUNGGAL 10 , RT: 003 / RW: 02 - NO.151 KELURAHAN
+                KEDAUNG WETAN KEC.NEGLASARI KOTA TANGGERANG 15128.
+              </a>
+            </div>
+          </FadeInOnScroll>
         </div>
         <div className="w-[90%] md:w-[50%] bg-[#202020] rounded-4xl p-5">
           <form className="w-full" onSubmit={handleSubmit(onSubmit)}>

@@ -37,13 +37,13 @@ const HoverSlideButton = ({ text = "Hover me", targetId, customOnClick }) => {
       className="group relative inline-flex h-10 md:h-12 items-center justify-center overflow-hidden rounded-full border border-amber-500 font-medium"
     >
       {/* Layer awal (default state) */}
-      <div className="inline-flex w-full h-10 md:h-12 translate-x-0 items-center justify-center bg-white px-2 md:px-6 text-neutral-950 transition group-hover:-translate-x-[150%] gap-2">
+      <div className="inline-flex w-full h-10 md:h-12 translate-x-0 items-center justify-center bg-white px-3 md:px-6 text-neutral-950 transition group-hover:-translate-x-[150%] gap-2">
         {text}
         <LuArrowUpRight />
       </div>
 
       {/* Layer saat hover */}
-      <div className="absolute inline-flex h-10 md:h-12 w-full translate-x-[100%] items-center justify-center bg-amber-500 px-2 md:px-6 text-neutral-50 transition duration-300 group-hover:translate-x-0">
+      <div className="absolute inline-flex h-10 md:h-12 w-full translate-x-[100%] items-center justify-center bg-amber-500 px-3 md:px-6 text-neutral-50 transition duration-300 group-hover:translate-x-0">
         {text}
       </div>
     </button>

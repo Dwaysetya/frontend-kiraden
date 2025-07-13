@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { cardRespons } from "../utils/Constanta";
+import FadeInOnScroll from "../animation/background/FadeInScroll";
 
 const CardsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,19 +22,23 @@ const CardsSection = () => {
         {cardRespons.map((card) => (
           <div
             key={card.id}
-            className="bg-[#202020] min-w-[100%] md:min-w-[23%] rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"
+            className="bg-[#202020] min-w-[100%] md:min-w-[30%] rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"
           >
-            <img
-              src={card.logo}
-              alt={`${card.title} Logo`}
-              className="w-30 h-30 mb-4 object-contain"
-            />
-            <h3 className="text-xl font-semibold text-amber-500 mb-2">
-              {card.title}
-            </h3>
-            <p className="text-white text-sm md:text-base mb-4">
-              {card.description}
-            </p>
+            <FadeInOnScroll once={false}>
+              <img
+                src={card.logo}
+                alt={`${card.title} Logo`}
+                className="w-30 h-30 mb-4 object-contain"
+              />
+            </FadeInOnScroll>
+            <FadeInOnScroll once={false}>
+              <h3 className="text-xl font-semibold text-amber-500 mb-2">
+                {card.title}
+              </h3>
+              <p className="text-white text-sm md:text-base mb-4">
+                {card.description}
+              </p>
+            </FadeInOnScroll>
             <button
               onClick={() => openModal(card)}
               className="px-4 py-2 text-black rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg relative overflow-hidden group"
@@ -60,23 +65,25 @@ const CardsSection = () => {
         {/* Oval container dengan tulisan */}
         <div className="w-full flex justify-center items-center mb-8">
           <div className="bg-[#2f2f2f] border-2 border-white rounded-full px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-2">
-            <h2
-              className="text-2xl sm:text-3xl md:text-4xl font-bold text-center whitespace-nowrap p-2"
-              style={{
-                background:
-                  "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}
-            >
-              Program Kelas
-            </h2>
+            <FadeInOnScroll once={false}>
+              <h2
+                className="text-2xl sm:text-3xl md:text-4xl font-bold text-center whitespace-nowrap p-2"
+                style={{
+                  background:
+                    "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                Program Kelas
+              </h2>
+            </FadeInOnScroll>
           </div>
         </div>
 
         {/* Grid untuk cards */}
-        <div className="flex flex-nowrap gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
+        <div className="flex flex-nowrap py-5 gap-12 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
           {renderCard()}
         </div>
       </div>

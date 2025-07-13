@@ -1,3 +1,4 @@
+import FadeInOnScroll from "../../animation/background/FadeInScroll";
 import Foto from "../../assets/banner/FOTO.png";
 import Foto2 from "../../assets/banner/profile.jpeg";
 import ScrollToKontakButton from "./button/ButtonCustom";
@@ -16,34 +17,40 @@ function Banner() {
             <div className="flex flex-col px-5 gap-5 md:gap-7 md:py-30 w-full md:w-[50%] order-2 md:order-1">
               <div className="flex gap-2">
                 <div className="border-b-4 border-white w-16 md:w-20 self-center"></div>
-                <p className="text-white font-extrabold text-base md:text-lg">
-                  Hallo
-                </p>
+                <FadeInOnScroll once={false}>
+                  <p className="text-white font-extrabold text-base md:text-lg">
+                    Hallo
+                  </p>
+                </FadeInOnScroll>
               </div>
               <div className="flex flex-col gap-2">
-                <h1 className="text-white text-2xl md:text-3xl">
-                  Selamat datang di
-                </h1>
-                <h1
-                  className=" text-4xl md:text-5xl font-extrabold tracking-wide"
-                  style={{
-                    background:
-                      "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                  }}
-                >
-                  Sekolah Paranormal
-                </h1>
+                <FadeInOnScroll once={false}>
+                  <h1 className="text-white text-2xl md:text-3xl">
+                    Selamat datang di
+                  </h1>
+                  <h1
+                    className=" text-4xl md:text-5xl font-extrabold tracking-wide"
+                    style={{
+                      background:
+                        "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      backgroundClip: "text",
+                    }}
+                  >
+                    Sekolah Paranormal
+                  </h1>
+                </FadeInOnScroll>
               </div>
-              <div className="flex justify-center">
-                <p className="text-white text-sm md:text-base text-left">
-                  Kami adalah lembaga pendidikan spiritual modern yang
-                  mengajarkan teknik hipnoterapi, pengembangan indra keenam, dan
-                  energi metafisik secara profesional dan bersertifikat.
-                </p>
-              </div>
+              <FadeInOnScroll once={false}>
+                <div className="flex justify-center">
+                  <p className="text-white text-sm md:text-base text-left">
+                    Kami adalah lembaga pendidikan spiritual modern yang
+                    mengajarkan teknik hipnoterapi, pengembangan indra keenam,
+                    dan energi metafisik secara profesional dan bersertifikat.
+                  </p>
+                </div>
+              </FadeInOnScroll>
               <div className="flex justify-center md:justify-start">
                 <HoverSlideButton
                   text="Kontak Kami"

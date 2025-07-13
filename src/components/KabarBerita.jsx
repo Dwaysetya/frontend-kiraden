@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { isiKabar } from "../utils/Constanta";
+import FadeInOnScroll from "../animation/background/FadeInScroll";
 
 function KabarBerita() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -26,9 +27,11 @@ function KabarBerita() {
       <section className="flex w-full justify-center items-center px-5 md:px-20 py-10 bg-black">
         <div className="flex w-full max-w-7xl flex-col gap-2">
           {/* Judul */}
-          <h1 className="text-white font-bold text-3xl md:text-4xl">
-            Kabar Berita
-          </h1>
+          <FadeInOnScroll once={false}>
+            <h1 className="text-white font-bold text-3xl md:text-4xl">
+              Kabar Berita
+            </h1>
+          </FadeInOnScroll>
 
           {/* Konten */}
           <div className="flex flex-nowrap gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
@@ -37,22 +40,24 @@ function KabarBerita() {
                 <div
                   key={index}
                   className="bg-[#1e1e1e] p-6 rounded-lg shadow-md text-white flex flex-col gap-4
-                       w-[calc(25%-1.5rem)] min-w-[100%] md:min-w-[22%] md: snap-start"
+                    w-[calc(25%-1.5rem)] min-w-[100%] md:min-w-[22%] md: snap-start"
                 >
-                  <div>{item.judul}</div>
-                  <div className="border-b-2 border-white w-full" />
-                  <div className="text-sm text-gray-400">{item.tanggal}</div>
-                  <div className="text-base flex flex-col">
-                    {truncateText(item.description)}
-                    {item.description.split(" ").length > 20 && (
-                      <span
-                        className="text-blue-400 cursor-pointer hover:text-blue-300"
-                        onClick={() => openModal(item)}
-                      >
-                        lihat selengkapnya
-                      </span>
-                    )}
-                  </div>
+                  <FadeInOnScroll once={false}>
+                    <div>{item.judul}</div>
+                    <div className="border-b-2 border-white w-full" />
+                    <div className="text-sm text-gray-400">{item.tanggal}</div>
+                    <div className="text-base flex flex-col">
+                      {truncateText(item.description)}
+                      {item.description.split(" ").length > 20 && (
+                        <span
+                          className="text-blue-400 cursor-pointer hover:text-blue-300"
+                          onClick={() => openModal(item)}
+                        >
+                          lihat selengkapnya
+                        </span>
+                      )}
+                    </div>
+                  </FadeInOnScroll>
                 </div>
               ))}
             </div>
