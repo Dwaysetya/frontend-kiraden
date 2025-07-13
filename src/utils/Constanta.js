@@ -30,6 +30,18 @@ import SatuSuro from "../assets/kabar_berita/1suro.png";
 import NapakTilas from "../assets/kabar_berita/GUNUNG KARANG.jpg";
 import Program from "../assets/kabar_berita/KEGIATAN PROGRAM KELAS.jpg";
 
+import SekolahUmum from "../assets/program_kelas/Icon Kelas Umum (2).png";
+import SekolahPrivate from "../assets/program_kelas/Icon Kelas Private.png";
+import SekolahTravis from "../assets/program_kelas/Icon Kelas Terapy.png";
+import HipnotisFundamental from "../assets/program_kelas/Icon Hipnotis Fundamental.png";
+import Hipnoterapi from "../assets/program_kelas/Icon Hipnoteraphy.png";
+import HipnotisMetafisika from "../assets/program_kelas/Icon Hipnotis Metafisika.png";
+import Gendam from "../assets/program_kelas/Icon Gendam Pamungkas.png";
+import Meracik from "../assets/program_kelas/Icon Meracik Benda Bertuah.png";
+import MembukaCabang from "../assets/program_kelas/Icon Membuka Cabang.png";
+import Legalitas from "../assets/program_kelas/Icon Perizinan Legalitas.png";
+import Sertifikat from "../assets/program_kelas/Icon Membuat Sertifikat.png";
+
 export const iconRespons = [
   {
     img: icon1,
@@ -69,47 +81,216 @@ export const iconRespons = [
 export const cardRespons = [
   {
     id: 1,
-    logo: "https://via.placeholder.com/64",
-    title: "Kelas Umum",
+    logo: SekolahUmum,
+    title: "Sekolah Umum",
     description:
-      "Pelajari teknik hipnoterapi untuk penyembuhan dan pengembangan diri.",
+      "Memberikan dasar-dasar ilmu paranormal secara umum untuk pemula.",
     modalImage: "https://via.placeholder.com/600x400",
     modalDescription:
-      "Hipnoterapi adalah metode yang menggunakan hipnosis untuk membantu individu mencapai perubahan positif dalam pikiran dan perilaku.",
+      "Program ini berfokus pada pengenalan dasar-dasar ilmu paranormal yang lebih umum. Di dalamnya, siswa akan belajar tentang konsep dasar dunia paranormal, teknik dasar, serta pengenalan terhadap fenomena luar biasa seperti energi, aura, dan kekuatan pikiran.\n \nTujuan: Memberikan pemahaman awal kepada siswa mengenai dunia paranormal dan kemampuan dasar yang diperlukan untuk mengembangkan potensi diri.",
     modalPoints: [
-      "Mengatasi fobia dan kecemasan.",
-      "Meningkatkan kepercayaan diri.",
-      "Mendukung penyembuhan emosional.",
+      "Pengenalan energi spiritual dan aura.",
+      "Teknik dasar meditasi dan konsentrasi.",
+      "Melatih kepekaan terhadap energi.",
+      "Pengenalan chakra dan fungsinya.",
+      "Teknik perlindungan energi diri.",
+      "Dasar komunikasi spiritual (telepati/intuisi).",
+      "Pengenalan entitas dan dimensi lain.",
+      "Etika dalam dunia paranormal.",
     ],
   },
   {
     id: 2,
-    logo: "https://via.placeholder.com/64",
-    title: "Kelas Private",
-    description:
-      "Kembangkan kemampuan intuitif dan persepsi ekstrasensor Anda.",
+    logo: SekolahPrivate,
+    title: "Sekolah Private",
+    description: "Pelatihan privat dengan pendekatan personal dan intensif.",
     modalImage: "https://via.placeholder.com/600x400",
     modalDescription:
-      "Pelatihan indra keenam membantu Anda mengasah intuisi dan kemampuan metafisik untuk memahami dunia di luar panca indera.",
+      "Program ini bersifat lebih eksklusif, di mana peserta mendapatkan pelatihan secara individu atau dalam kelompok kecil. Materi yang diajarkan disesuaikan dengan kebutuhan pribadi peserta.\n \nTujuan: Memberikan perhatian lebih intensif untuk mengembangkan keterampilan khusus sesuai dengan minat atau tujuan pribadi masing-masing siswa.",
     modalPoints: [
-      "Meningkatkan sensitivitas energi.",
-      "Melatih clairvoyance dan clairsentience.",
-      "Memahami sinyal alam semesta.",
+      "Pemahaman potensi pribadi (bakat spiritual).",
+      "Program disesuaikan dengan tujuan peserta.",
+      "Bimbingan langsung 1-on-1.",
+      "Praktik lapangan dengan studi kasus nyata.",
+      "Teknik lanjutan sesuai bidang minat (hipnotis, terapi, dll).",
+      "Evaluasi berkala dan penguatan skill.",
+      "Pembersihan energi dan pelatihan khusus.",
+      "Penguatan koneksi spiritual secara individu.",
     ],
   },
   {
     id: 3,
-    logo: "https://via.placeholder.com/64",
-    title: "Kelas Terapi Holistik",
-    description:
-      "Kuasai energi metafisik untuk keseimbangan dan kekuatan batin.",
+    logo: SekolahTravis,
+    title: "Sekolah Terapis",
+    description: "Membentuk praktisi penyembuhan energi dan spiritual.",
     modalImage: "https://via.placeholder.com/600x400",
     modalDescription:
-      "Pelajari cara mengelola dan memanfaatkan energi metafisik untuk kesehatan spiritual dan fisik.",
+      "Program ini bersifat lebih eksklusif, di mana peserta mendapatkan pelatihan secara individu atau dalam kelompok kecil. Materi yang diajarkan disesuaikan dengan kebutuhan pribadi peserta. \n \nTujuan: Memberikan perhatian lebih intensif untuk mengembangkan keterampilan khusus sesuai dengan minat atau tujuan pribadi masing-masing siswa.",
     modalPoints: [
-      "Teknik meditasi energi.",
-      "Pembersihan aura dan cakra.",
-      "Penguatan energi pelindung.",
+      "Dasar-dasar penyembuhan spiritual.",
+      "Teknik penyelarasan chakra.",
+      "Pengenalan penyembuhan jarak jauh.",
+      "Energi tangan dan teknik sentuhan.",
+      "Terapi menggunakan benda bertuah (jimat, batu).",
+      "Pemahaman akar penyakit secara metafisik.",
+      "Teknik grounding dan proteksi terapis.",
+      "Etika dalam terapi energi dan spiritual.",
+    ],
+  },
+  {
+    id: 4,
+    logo: HipnotisFundamental,
+    title: "Hipnotis Fundamental",
+    description: "Memberikan dasar ilmu hipnosis untuk penggunaan umum.",
+    modalImage: "https://via.placeholder.com/600x400",
+    modalDescription:
+      "Program ini adalah dasar dari ilmu hipnosis. Peserta akan diajarkan bagaimana cara mengendalikan pikiran bawah sadar seseorang untuk membantu mereka mengatasi masalah tertentu seperti stres, kebiasaan buruk, atau trauma masa lalu.\n \nTujuan: Memberikan keterampilan dasar dalam hipnosis untuk bisa digunakan dalam kehidupan sehari-hari atau untuk terapi.",
+    modalPoints: [
+      "Sejarah dan dasar hipnosis.",
+      "Struktur pikiran sadar & bawah sadar.",
+      "Teknik induksi dasar.",
+      "Sugesti verbal dan nonverbal.",
+      "Tes sugestibilitas.",
+      "Self-hypnosis (hipnosis diri sendiri).",
+      "Penggunaan hipnosis untuk kebiasaan (merokok, makan).",
+      "Etika dan batasan penggunaan hipnosis.",
+    ],
+  },
+  {
+    id: 5,
+    logo: Hipnoterapi,
+    title: "Hipnoterapy",
+    description:
+      "Terapis profesional yang memanfaatkan hipnosis untuk penyembuhan.",
+    modalImage: "https://via.placeholder.com/600x400",
+    modalDescription:
+      "Hipnoterapy lebih lanjut dari hipnosis dasar, di mana peserta belajar menggunakan hipnosis sebagai alat untuk terapi yang lebih mendalam. Di kelas ini, siswa akan dilatih untuk memecahkan masalah klien dengan menggunakan teknik hipnosis untuk penyembuhan emosional atau mental.\n \nTujuan: Membekali siswa dengan keterampilan dalam terapi hipnosis yang bisa digunakan untuk menyembuhkan atau membantu orang lain dalam masalah psikologis atau emosional.",
+    modalPoints: [
+      "Protokol sesi terapi hipnosis.",
+      "Teknik regresi dan progresi.",
+      "Menangani trauma dan phobia.",
+      "Terapi inner child.",
+      "Teknik visualisasi penyembuhan.",
+      "Reframing dan penanaman sugesti positif.",
+      "Membangun hubungan terapeutik dengan klien.",
+      "Studi kasus dan praktik langsung.",
+    ],
+  },
+  {
+    id: 6,
+    logo: HipnotisMetafisika,
+    title: "Hipnotis Metafisika",
+    description:
+      "Menggabungkan hipnosis dengan pendekatan spiritual dan metafisik.",
+    modalImage: "https://via.placeholder.com/600x400",
+    modalDescription:
+      "Program ini menggabungkan ilmu hipnosis dengan aspek metafisika atau spiritual. Siswa akan belajar bagaimana menggunakan hipnosis untuk memahami atau berinteraksi dengan dimensi lain, energi spiritual, atau fenomena metafisik yang lebih dalam.\n \nTujuan: Membekali peserta dengan pengetahuan dan keterampilan dalam mengakses dimensi energi dan spiritual menggunakan teknik hipnosis.",
+    modalPoints: [
+      "Meditasi hipnosis untuk koneksi spiritual.",
+      "Hipnosis untuk komunikasi dimensi lain.",
+      "Mengakses memori kehidupan lampau.",
+      "Pemrograman energi melalui sugesti.",
+      "Aktivasi potensi batin melalui hipnosis.",
+      "Hipnosis dalam penyembuhan spiritual.",
+      "Penguatan intuisi melalui bawah sadar.",
+      "Keamanan dalam praktik metafisika hipnosis.",
+    ],
+  },
+  {
+    id: 7,
+    logo: Gendam,
+    title: "Gendam Pamungkas/ Tali Asmoro",
+    description: "Penguasaan sugesti tingkat tinggi dan pengaruh bawah sadar.",
+    modalImage: "https://via.placeholder.com/600x400",
+    modalDescription:
+      "Kelas ini mengajarkan seni gendam atau pengaruh sugesti yang sangat kuat, yang bisa digunakan untuk memengaruhi pikiran orang lain dengan cara yang sangat efektif. Gendam pamungkas ini mengajarkan teknik manipulasi pikiran yang dalam, digunakan untuk tujuan tertentu.\n \nTujuan: Memberikan keterampilan dalam menggunakan teknik sugesti atau gendam dengan sangat efektif dan aman (dalam konteks yang sah dan etis).",
+    modalPoints: [
+      "Sejarah dan filosofi gendam.",
+      "Teknik sugesti verbal dan tatapan.",
+      "Olah energi dan kekuatan niat.",
+      "Cara memasukkan sugesti halus (implisit).",
+      "Teknik komunikasi bawah sadar.",
+      "Gendam jarak jauh (tanpa sentuhan).",
+      "Anti-gendam dan teknik penangkal.",
+      "Kode etik dalam penggunaan gendam.",
+    ],
+  },
+  {
+    id: 8,
+    logo: Meracik,
+    title: "Meraacik Media Bertuah",
+    description:
+      "Membuat dan mengisi benda-benda yang memiliki energi metafisik.",
+    modalImage: "https://via.placeholder.com/600x400",
+    modalDescription:
+      "Kelas ini mengajarkan tentang pembuatan dan penggunaan media bertuah seperti benda-benda tertentu yang diyakini memiliki energi khusus, seperti batu bertuah, jimat, atau alat spiritual lainnya. Di dalamnya, peserta belajar cara menciptakan atau merawat media bertuah yang dapat digunakan dalam praktik paranormal.\n \nTujuan: Mengajarkan siswa bagaimana membuat, merawat, dan menggunakan media bertuah sebagai alat untuk membantu dalam pengembangan spiritual atau praktik paranormal lainnya.",
+    modalPoints: [
+      "Pengenalan jenis media bertuah (batu, logam, kain).",
+      "Teknik pembersihan dan penyucian media.",
+      "Mengisi energi positif ke dalam media.",
+      "Doa, mantra, dan afirmasi penguat.",
+      "Energi alami vs energi program.",
+      "Media untuk perlindungan, rejeki, keberanian.",
+      "Cara menguji media bertuah.",
+      "Etika dalam menjual atau memberikan media bertuah.",
+    ],
+  },
+  {
+    id: 9,
+    logo: MembukaCabang,
+    title: "Membuka Cabang Sekolah",
+    description: "Menyiapkan alumni menjadi pemilik cabang atau franchise.",
+    modalImage: "https://via.placeholder.com/600x400",
+    modalDescription:
+      "Program ini ditujukan bagi mereka yang ingin memperluas jaringan dan membuka cabang sekolah paranormal mereka sendiri. Dalam kelas ini, peserta akan mempelajari hal-hal terkait dengan manajemen, perencanaan bisnis, dan pemasaran untuk membuka cabang atau mendirikan sekolah serupa.\n \nTujuan: Menyiapkan siswa untuk dapat memperluas pengaruh atau membangun sekolah paranormal mereka sendiri dengan memahami aspek operasional dan manajerial.",
+    modalPoints: [
+      "Model bisnis dan struktur sekolah.",
+      "Branding dan positioning Sekolah Paranormal.",
+      "SOP mengajar dan sistem pembelajaran.",
+      "Rekrutmen staf / tenaga pengajar.",
+      "Strategi promosi dan pemasaran digital.",
+      "Pengelolaan keuangan dan administrasi.",
+      "Komunikasi dengan murid dan alumni.",
+      "Hak & kewajiban sebagai pemilik cabang.",
+    ],
+  },
+  {
+    id: 10,
+    logo: Legalitas,
+    title: "Perizinan Legalitas Praktek",
+    description:
+      "Memberikan pemahaman dan panduan legal untuk praktik paranormal.",
+    modalImage: "https://via.placeholder.com/600x400",
+    modalDescription:
+      "Program ini mengajarkan tentang cara mendapatkan izin legal dan memahami regulasi yang berlaku bagi praktik paranormal di wilayah hukum tertentu. Peserta akan mempelajari cara-cara legal untuk memastikan bahwa praktik yang mereka lakukan sah dan diakui oleh hukum.\n \nTujuan: Membekali peserta dengan pengetahuan terkait izin yang diperlukan untuk membuka praktik paranormal secara sah dan sesuai dengan hukum.",
+    modalPoints: [
+      "Jenis izin dan legalitas yang diperlukan.",
+      "Cara mengurus izin praktek di instansi pemerintah.",
+      "Perbedaan praktik spiritual dan pengobatan medis.",
+      "Penyusunan dokumen hukum (surat izin, surat pernyataan).",
+      "Etika profesi dan perlindungan hukum.",
+      "Pengelolaan aduan atau konflik hukum.",
+      "Menjaga reputasi dan kepercayaan publik.",
+      "Regulasi lokal vs nasional terkait praktek spiritual.",
+    ],
+  },
+  {
+    id: 11,
+    logo: Sertifikat,
+    title: "Membuat Sertifikat",
+    description: "Menghasilkan sertifikat profesional yang sah dan menarik.",
+    modalImage: "https://via.placeholder.com/600x400",
+    modalDescription:
+      "Kelas ini mengajarkan cara membuat sertifikat yang sah untuk peserta atau siswa yang telah menyelesaikan program pelatihan tertentu di sekolah paranormal. Program ini juga mencakup aspek legalitas dari sertifikat, termasuk cara pengesahan dan pembuatan dokumen resmi.\n \nTujuan: Memberikan keterampilan dalam pembuatan sertifikat yang sah dan terverifikasi untuk para siswa yang lulus dari kelas atau program tertentu, serta memberikan mereka pengakuan resmi.",
+    modalPoints: [
+      "Format dan komponen sertifikat resmi.",
+      "Desain visual profesional (layout, logo, QR code).",
+      "Penggunaan nomor seri dan validasi.",
+      "Pendaftaran legal untuk keabsahan sertifikat.",
+      "Sistem pendataan alumni dan kelulusan.",
+      "Cetak manual vs digital.",
+      "Cara menghindari pemalsuan sertifikat.",
+      "SOP penerbitan dan distribusi sertifikat.",
     ],
   },
 ];

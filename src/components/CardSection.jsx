@@ -21,7 +21,7 @@ const CardsSection = () => {
         {cardRespons.map((card) => (
           <div
             key={card.id}
-            className="bg-[#202020] rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"
+            className="bg-[#202020] min-w-[100%] md:min-w-[23%] rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"
           >
             <img
               src={card.logo}
@@ -76,7 +76,7 @@ const CardsSection = () => {
         </div>
 
         {/* Grid untuk cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-nowrap gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
           {renderCard()}
         </div>
       </div>
@@ -101,7 +101,15 @@ const CardsSection = () => {
                 {selectedCard.title}
               </h3>
               <p className="text-gray-600 text-sm md:text-base mb-4">
-                {selectedCard.modalDescription}
+                {/* {selectedCard.modalDescription} */}
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: selectedCard.modalDescription.replace(
+                      /\n/g,
+                      "<br />"
+                    ),
+                  }}
+                />
               </p>
               <ul className="list-disc list-inside text-gray-600 text-sm md:text-base">
                 {selectedCard.modalPoints.map((point, index) => (
