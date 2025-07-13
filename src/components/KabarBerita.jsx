@@ -1,60 +1,9 @@
 import React, { useState } from "react";
+import { isiKabar } from "../utils/Constanta";
 
 function KabarBerita() {
   const [selectedItem, setSelectedItem] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const isiKabar = [
-    {
-      tanggal: "30 Mei 2024",
-      judul: "Pendirian Sekolah Paranormal Indonesia",
-      description:
-        "Didirikan pada tanggal 30 Mei 2024 oleh Rifki Rahmdani, Sekolah Paranormal Indonesia hadir sebagai wadah pembelajaran ilmu-ilmu adiluhur warisan leluhur. Sekolah ini bertujuan untuk melestarikan dan mengembangkan pengetahuan spiritual tradisional Indonesia yang telah diwariskan turun-temurun. Dengan pendekatan yang menggabungkan tradisi dan modernitas, Sekolah Paranormal Indonesia menjadi tempat yang tepat bagi mereka yang ingin mendalami ilmu kebatinan dan spiritual.",
-      foto: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
-    },
-    {
-      tanggal: "15 Juni 2024",
-      judul: "Atraksi Debus - Seni Tradisional Indonesia",
-      description:
-        "Sekolah Paranormal mengadakan Atraksi Debus, MENGANGKAT SENI TRADISIONAL ASLI INDONESIA. Pertunjukan ini menampilkan keahlian spiritual dan kekuatan batin yang telah dipelajari para siswa. Debus merupakan salah satu warisan budaya Indonesia yang memadukan unsur spiritual, seni, dan kekuatan mental. Melalui pertunjukan ini, Sekolah Paranormal Indonesia membuktikan bahwa ilmu spiritual tradisional masih relevan dan dapat diapresiasi di era modern.",
-      foto: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
-    },
-    {
-      tanggal: "20 Juli 2024",
-      judul: "Halal Bihalal Tahunan",
-      description:
-        "Halal Bihalal adalah acara yang kita adakan setiap tahunnya, mengingat dengan adanya ini, menjalin tali silahturahmi dengan sesama anggota. Acara ini menjadi momen penting untuk mempererat hubungan antaranggota komunitas Sekolah Paranormal Indonesia. Dalam suasana yang hangat dan penuh kekeluargaan, para anggota berbagi pengalaman, pengetahuan, dan saling mendoakan. Tradisi ini juga menjadi wadah untuk merencanakan program-program ke depan yang akan dilaksanakan oleh sekolah.",
-      foto: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=400&fit=crop",
-    },
-    {
-      tanggal: "5 Agustus 2024",
-      judul: "Kunjungan Tamu Spesial Internasional",
-      description:
-        "Kedatangan tamu yang sangat spesial bagi Sekolah PARANORMAL, menjadikan Sekolah Paranormal semakin mendunia. Kunjungan ini membawa dampak positif dalam pengembangan jaringan internasional dan pertukaran pengetahuan spiritual lintas budaya. Para tamu memberikan apresiasi tinggi terhadap kearifan lokal Indonesia yang diajarkan di sekolah. Momen bersejarah ini menandai dimulainya kerjasama internasional dalam bidang studi paranormal dan spiritual.",
-      foto: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop",
-    },
-    {
-      tanggal: "12 September 2024",
-      judul: "Seminar Spiritual dan Kebatinan",
-      description:
-        "Sekolah Paranormal Indonesia mengadakan seminar besar tentang spiritual dan kebatinan yang dihadiri oleh ratusan peserta dari berbagai daerah. Acara ini menghadirkan narasumber-narasumber terkemuka dalam bidang spiritual dan paranormal. Peserta mendapat kesempatan untuk belajar langsung dari para ahli dan praktisi berpengalaman. Seminar ini juga menjadi ajang diskusi dan berbagi pengalaman antarpenggiat ilmu spiritual di Indonesia.",
-      foto: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=400&fit=crop",
-    },
-    {
-      tanggal: "28 Oktober 2024",
-      judul: "Workshop Pengembangan Diri",
-      description:
-        "Workshop pengembangan diri yang diselenggarakan Sekolah Paranormal Indonesia bertujuan untuk membantu peserta memahami potensi spiritual dalam diri mereka. Melalui berbagai teknik meditasi, visualisasi, dan latihan spiritual, peserta dibimbing untuk mencapai keseimbangan jiwa dan raga. Program ini dirancang khusus untuk pemula yang ingin memulai perjalanan spiritual mereka dengan bimbingan yang tepat dan terarah.",
-      foto: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop",
-    },
-    {
-      tanggal: "15 November 2024",
-      judul: "Pelatihan Instruktur Baru",
-      description:
-        "Program pelatihan instruktur baru diluncurkan untuk mempersiapkan generasi penerus yang akan mengajarkan ilmu spiritual dan paranormal. Calon instruktur menjalani pelatihan intensif selama beberapa bulan untuk memastikan kualitas pengajaran tetap terjaga. Program ini mencakup teori, praktik, dan metodologi pengajaran yang efektif. Lulusan program ini akan menjadi ujung tombak dalam menyebarkan ilmu spiritual ke seluruh Indonesia.",
-      foto: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
-    },
-  ];
 
   const truncateText = (text, maxWords = 20) => {
     const words = text.split(" ");
@@ -78,7 +27,7 @@ function KabarBerita() {
         <div className="flex w-full max-w-7xl flex-col gap-2">
           {/* Judul */}
           <h1 className="text-white font-bold text-3xl md:text-4xl">
-            Kabar Sekolah Paranormal
+            Kabar Berita
           </h1>
 
           {/* Konten */}
@@ -90,6 +39,7 @@ function KabarBerita() {
                   className="bg-[#1e1e1e] p-6 rounded-lg shadow-md text-white flex flex-col gap-4
                        w-[calc(25%-1.5rem)] min-w-[100%] md:min-w-[22%] md: snap-start"
                 >
+                  <div>{item.judul}</div>
                   <div className="border-b-2 border-white w-full" />
                   <div className="text-sm text-gray-400">{item.tanggal}</div>
                   <div className="text-base flex flex-col">
@@ -140,7 +90,11 @@ function KabarBerita() {
 
               {/* Description */}
               <p className="text-gray-600 leading-relaxed">
-                {selectedItem.description}
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: selectedItem.description.replace(/\n/g, "<br />"),
+                  }}
+                />
               </p>
             </div>
           </div>

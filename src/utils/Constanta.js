@@ -24,6 +24,12 @@ import tantang2 from "../assets/tentang_kami/2.jpeg";
 import tantang3 from "../assets/tentang_kami/3.jpeg";
 import tantang4 from "../assets/tentang_kami/4.jpeg";
 
+import IdulAdha from "../assets/kabar_berita/IDUL ADHA.jpg";
+import BukaPuasa from "../assets/kabar_berita/BUKA PUASA BERSAMA.jpg";
+import SatuSuro from "../assets/kabar_berita/1suro.png";
+import NapakTilas from "../assets/kabar_berita/GUNUNG KARANG.jpg";
+import Program from "../assets/kabar_berita/KEGIATAN PROGRAM KELAS.jpg";
+
 export const iconRespons = [
   {
     img: icon1,
@@ -226,17 +232,69 @@ export const slides = [
   },
 ];
 
- export const abouteGaleri = [
-   {
-     img: tantang1,
-   },
-   {
-     img: tantang2,
-   },
-   {
-     img: tantang3,
-   },
-   {
-     img: tantang4,
-   },
- ];
+export const abouteGaleri = [
+  {
+    img: tantang1,
+  },
+  {
+    img: tantang2,
+  },
+  {
+    img: tantang3,
+  },
+  {
+    img: tantang4,
+  },
+];
+
+export const isiKabar = [
+  {
+    tanggal: "30 Mei 2024",
+    judul: "🕌 Idul Adha 1446 H: Sekolah Paranormal Berqurban",
+    description:
+      "Dalam menyambut Hari Raya Idul Adha 1446 Hijriah, Sekolah Paranormal turut berpartisipasi dalam semangat berqurban dengan menyalurkan satu ekor kambing dan satu ekor sapi sebagai bentuk kepedulian sosial dan penguatan nilai spiritual bagi para murid. \n \nAcara qurban yang dilaksanakan pada hari Senin, 10 Dzulhijjah 1446 H ini berlangsung penuh kekhusyukan. Proses penyembelihan dilakukan dengan memperhatikan tata cara syar’i, disaksikan oleh para guru, siswa, dan beberapa warga sekitar.\n \nDaging qurban didistribusikan kepada masyarakat di lingkungan sekitar sekolah serta pihak-pihak yang membutuhkan, sebagai wujud rasa syukur dan kepedulian terhadap sesama.\n \nQurban bukan hanya ritual tahunan, tapi juga sarana untuk melatih hati dalam berbagi dan merasakan kebutuhan orang lain, ujar salah satu pembimbing spiritual di Sekolah Paranormal.\n \nSemoga semangat berqurban ini memperkuat nilai-nilai keikhlasan, pengorbanan, dan cinta kasih dalam kehidupan sehari-hari seluruh warga sekolah.",
+    foto: IdulAdha,
+  },
+  {
+    tanggal: "Sabtu, 22 Maret 2025",
+    judul: "Buka Puasa Bersama Sekolah Paranormal",
+    description:
+      "Dalam suasana hangat dan penuh kekhusyukan, Sekolah Paranormal mengadakan kegiatan Buka Puasa Bersama pada Sabtu, 22 Maret 2025. Acara ini merupakan bagian dari rangkaian kegiatan Ramadhan yang bertujuan untuk mempererat tali silaturahmi antara siswa, guru, pembimbing spiritual, serta masyarakat sekitar.\n \nAcara dimulai dengan tadarus bersama, dilanjutkan dengan tausiyah singkat bertema “Puasa Sebagai Jalan Pembersihan Batin dan Jiwa”, sebelum waktu berbuka tiba. Setelah azan maghrib berkumandang, para peserta berbuka puasa bersama dengan hidangan sederhana namun penuh berkah.\n \n`Buka puasa bersama ini bukan hanya soal makan bersama, tapi momen untuk menyatukan hati dalam ibadah dan kebersamaan spiritual,` (ungkap salah satu panitia).\n \nKegiatan ditutup dengan salat maghrib berjamaah dan ramah tamah antar peserta. Semoga kegiatan ini menjadi bagian dari upaya memperkuat spiritualitas dan mempererat rasa persaudaraan di lingkungan Sekolah Paranormal.",
+    foto: BukaPuasa,
+  },
+  {
+    tanggal: "Kamis Malam, 26 Juni 2025",
+    judul: "Malam Satu Suro & Rangkaian Jamasan",
+    description:
+      "Sekolah Paranormal menggelar rangkaian ritual khusus dalam rangka menyambut Malam Satu Suro, yang jatuh pada Kamis malam, 26 Juni 2025. Acara ini menjadi momen penting dalam tradisi kejawen untuk melakukan perenungan, pembersihan diri, serta pelestarian warisan budaya leluhur.\n \nAcara inti berupa Jamasan, yaitu ritual penyucian benda-benda pusaka milik sekolah, dilaksanakan dengan penuh kehikmatan. Prosesi ini dipimpin oleh pembimbing spiritual dan diikuti oleh para murid dengan pakaian adat hitam sebagai simbol keteduhan dan kesungguhan hati.\n \nSelain jamasan, malam tersebut juga diisi dengan:\n - Meditasi bersama dan doa keselamatan\n -Tirakat dan renungan malam\n -Pengajian singkat tentang makna Suro dalam kehidupan spiritual \n \nSuro adalah waktu terbaik untuk menyucikan diri dari hawa nafsu dan menyambut lembaran baru dengan niat yang lebih lurus, (ujar salah satu pembina spiritual.\n \nDengan digelarnya acara ini, Sekolah Paranormal berharap semangat Suro dapat menjadi momentum penguatan spiritual dan pelestarian budaya di tengah kehidupan modern.",
+    foto: SatuSuro,
+  },
+  {
+    tanggal: "17 Mei 2025",
+    judul: "Napak Tilas & Wisata Religi Gunung Karang",
+    description:
+      "Sebagai bagian dari pembinaan spiritual dan pelestarian tradisi, Sekolah Paranormal melaksanakan kegiatan Napak Tilas dan Wisata Religi ke kawasan sakral Gunung Karang, Banten. Acara ini menjadi bagian dari perjalanan batin untuk penyucian diri, penguatan niat, dan pengendalian ego melalui tirakat di alam terbuka.\n \nSalah satu momen puncak dari kegiatan ini adalah ritual penggundulan kepala, sebagai simbol melepas ego duniawi dan membuka lembaran baru dalam kehidupan spiritual. Para peserta secara sukarela menggundulkan kepala mereka sebagai bentuk totalitas dalam proses pembersihan jiwa dan raga.\n \nKegiatan ini juga diisi dengan:\n - Jalan kaki napak tilas menuju lokasi-lokasi keramat\n - Meditasi dan doa bersama di puncak Gunung Karang\n - Renungan malam dan penyalaan api suci\n - Pembekalan spiritual dari para pembimbing\n \n`Gunung Karang bukan hanya tempat wisata religi, tapi ruang sunyi untuk mendengarkan suara batin kita sendiri,` tutur salah satu peserta.\n Dengan atmosfer sakral dan nuansa alam yang tenang, kegiatan ini diharapkan mampu memperkuat spiritualitas, melatih keteguhan hati, dan mengajak peserta lebih dekat pada jati diri sejati.",
+    foto: NapakTilas,
+  },
+  {
+    tanggal: "Sabtu, 5 April 2025",
+    judul: "Pelatihan Berbagai Program Kelas Sekolah Paranormal",
+    description:
+      "Sebagai wujud komitmen dalam membina dan mengembangkan potensi spiritual masyarakat, Sekolah Paranormal mengadakan kegiatan Pelatihan Berbagai Program Kelas pada 5 April 2025. Kegiatan ini diikuti oleh peserta dari berbagai daerah, mulai dari pemula hingga praktisi berpengalaman.\n \nBeragam kelas pelatihan yang ditawarkan antara lain:\n 1. Sekolah Umum — Pengenalan dasar energi spiritual, meditasi, chakra, dan intuisi.\n 2. Sekolah Private — Pembelajaran intensif 1-on-1 sesuai bakat dan tujuan pribadi.\n 3. Sekolah Terapis — Pelatihan praktisi penyembuhan energi, terapi sentuhan, dan grounding.\n 4. Hipnotis Fundamental — Dasar hipnosis untuk keseharian dan perubahan kebiasaan.\n 5. Hipnoterapi — Penggunaan hipnosis untuk penyembuhan trauma, phobia, dan inner child.\n 6. Hipnotis Metafisika — Hipnosis dikombinasikan dengan spiritualitas dan energi batin.\n 7. Gendam Pamungkas — Teknik sugesti tingkat tinggi dan komunikasi bawah sadar.\n 8. Meracik Media Bertuah — Pelatihan membuat dan mengisi benda bertuah secara etis.\n 9. Membuka Cabang Sekolah — Persiapan menjadi mitra/franchise dengan sistem resmi.\n 10. Perizinan Legalitas Praktek — Panduan mengurus izin resmi untuk praktik spiritual.\n 11. Membuat Sertifikat — Pelatihan penerbitan sertifikat legal, sah, dan profesional.\n \n`Kami tidak hanya mengajarkan ilmu, tapi juga nilai, etika, dan tanggung jawab dalam mempraktikkan kemampuan spiritual,` ujar salah satu pengajar senior.\n \nKegiatan ini diharapkan dapat menjadi sarana untuk mencetak praktisi spiritual yang berkualitas, etis, dan mampu membawa manfaat bagi masyarakat luas. ",
+    foto: Program,
+  },
+  //  {
+  //    tanggal: "28 Oktober 2024",
+  //    judul: "Workshop Pengembangan Diri",
+  //    description:
+  //      "Workshop pengembangan diri yang diselenggarakan Sekolah Paranormal Indonesia bertujuan untuk membantu peserta memahami potensi spiritual dalam diri mereka. Melalui berbagai teknik meditasi, visualisasi, dan latihan spiritual, peserta dibimbing untuk mencapai keseimbangan jiwa dan raga. Program ini dirancang khusus untuk pemula yang ingin memulai perjalanan spiritual mereka dengan bimbingan yang tepat dan terarah.",
+  //    foto: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop",
+  //  },
+  //  {
+  //    tanggal: "15 November 2024",
+  //    judul: "Pelatihan Instruktur Baru",
+  //    description:
+  //      "Program pelatihan instruktur baru diluncurkan untuk mempersiapkan generasi penerus yang akan mengajarkan ilmu spiritual dan paranormal. Calon instruktur menjalani pelatihan intensif selama beberapa bulan untuk memastikan kualitas pengajaran tetap terjaga. Program ini mencakup teori, praktik, dan metodologi pengajaran yang efektif. Lulusan program ini akan menjadi ujung tombak dalam menyebarkan ilmu spiritual ke seluruh Indonesia.",
+  //    foto: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
+  //  },
+];
