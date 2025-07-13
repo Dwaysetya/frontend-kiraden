@@ -4,6 +4,7 @@ import { LuInstagram } from "react-icons/lu";
 import { FiYoutube } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
 import { useForm } from "react-hook-form";
+import { FaTiktok } from "react-icons/fa";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import * as yup from "yup";
@@ -92,33 +93,42 @@ function CardKontak() {
             </span>
           </h1>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            asperiores esse ut tenetur excepturi hic illum ipsum vitae
-            consequuntur illo eligendi ipsam fugit nam sit culpa, doloribus nemo
-            officia ab.
+            Belajar di Sekolah Paranormal bukan sekadar hadir di kelas, tapi
+            juga kesiapan lahir dan batin.
+            <ul>
+              <li>Mulailah dengan :</li>
+              <li> - Adab </li>
+              <li>- Kecerdasan </li>
+              <li>- Niat yang lurus </li>
+              <li>- Kesungguhan </li>
+              <li>- Kesiapan Biaya </li>
+              <li>
+                - Hubungan yang dekat dengan guru Serta Istiqomah dalam proses
+              </li>
+            </ul>
           </p>
           <div className="flex items-center gap-5 text-white">
             <FaWhatsapp />
-            <span>0881-2345678</span>
+            <span>0851 3333 9854 / 0857 7161 8600</span>
           </div>
           <div className="flex items-center gap-5 text-white">
             <TfiEmail />
             <a
-              href="mailto:Sekolah_Paranormal@gmail.com"
+              href="mailto:sekolahparanormal@gmail.com"
               className="hover:underline"
             >
-              Sekolah_Paranormal@gmail.com
+              sekolahparanormal@gmail.com
             </a>
           </div>
           <div className="flex items-center gap-5 text-white">
             <LuInstagram />
             <a
-              href="https://instagram.com/Sekolah_Paranormal"
+              href="https://www.instagram.com/sekolah_paranormal?igsh=MWR6dXVrdDV5eGQ0OQ=="
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              @Sekolah_Paranormal
+              sekolahparanormal
             </a>
           </div>
           <div className="flex items-center gap-5 text-white">
@@ -129,18 +139,31 @@ function CardKontak() {
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              Sekolah_Paranormal
+              sekolahparanormal
             </a>
           </div>
           <div className="flex items-center gap-5 text-white">
-            <GrLocation className="" />
+            <FaTiktok />
+            <a
+              href="https://www.tiktok.com/@sekolahparanormal?_t=ZS-8xzFjysJeYj&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              sekolah paranormal
+            </a>
+          </div>
+          <div className="flex items-center gap-5 text-white">
+            <GrLocation className="text-7xl md:text-5xl" />
             <a
               href="https://maps.google.com/?q=alamat+lengkap+anda"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              jl. Lorem ipsum dolor sit amet consectetur...
+              Jl.AMD MANUNGGAL 10 , RT: 003 / RW: 02 - NO.151 KELURAHAN KEDAUNG
+              WETAN KEC.NEGLASARI KOTA TANGGERANG 15128. Patokan (Gg Teratai 2 ,
+              toko agen Andi Belakang RT agus)
             </a>
           </div>
         </div>
