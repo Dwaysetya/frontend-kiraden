@@ -125,7 +125,7 @@ function CardKontak() {
           <div className="flex items-center gap-5 text-white">
             <FiYoutube />
             <a
-              href="https://youtube.com/@Sekolah_Paranormal"
+              href="https://youtube.com/@kiradensuryamudana15?si=lAjwo0SVoHxHiKaD"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
@@ -147,7 +147,7 @@ function CardKontak() {
           <div className="flex items-center gap-5 text-white">
             <GrLocation className="text-5xl md:text-3xl" />
             <a
-              href="https://maps.google.com/?q=alamat+lengkap+anda"
+              href="WJ6R+PMR, Jl. Babussalam, Teluknaga, Kec. Teluknaga, Kabupaten Tangerang, Banten 15510"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
