@@ -147,7 +147,7 @@ function CardKontak() {
           <div className="flex items-center gap-5 text-white">
             <GrLocation className="text-5xl md:text-3xl" />
             <a
-              href="WJ6R+PMR, Jl. Babussalam, Teluknaga, Kec. Teluknaga, Kabupaten Tangerang, Banten 15510"
+              href="https://www.google.com/maps/place/Pendopo+Agung+SPI/@-6.0880153,106.6389176,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6a030008da3017:0x9cb1f02c470248fc!8m2!3d-6.0880153!4d106.6414925!16s%2Fg%2F11wjmkzjm1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
