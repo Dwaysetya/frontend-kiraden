@@ -26,7 +26,7 @@ const CardsSection = () => {
             <img
               src={card.logo}
               alt={`${card.title} Logo`}
-              className="w-16 h-16 mb-4 object-contain"
+              className="w-30 h-30 mb-4 object-contain"
             />
             <h3 className="text-xl font-semibold text-amber-500 mb-2">
               {card.title}
