@@ -88,11 +88,11 @@ function Home() {
           />
           <div className="absolute inset-0 flex sm:flex-col justify-center items-center sm:items-start gap-3 md:gap-5 px-4 py-1 md:p-10 lg:p-20 text-white">
             <div className="flex flex-col gap-2 md:gap-5 w-full md:w-[70%] max-w-md">
-              <p className="text-xs sm:text-sm md:text-lg lg:text-2xl">
+              <p className="text-xs hidden md:flex sm:text-sm md:text-lg lg:text-2xl">
                 Tentang Kami
               </p>
               <h1
-                className="text-sm sm:text-3xl md:text-4xl font-bold"
+                className="text-xs sm:text-3xl md:text-4xl font-bold"
                 style={{
                   background:
                     "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
