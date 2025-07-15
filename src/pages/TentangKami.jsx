@@ -50,8 +50,8 @@ function TentangKami() {
             </h1>
             <p className="text-base md:text-lg max-w-3xl text-justify">
               Sekolah Paranormal Indonesia adalah lembaga pendidikan spiritual
-              modern yang didirikan pada tanggal 30 Mei 2024 oleh Rifki
-              Rahmadani, mempersiapkan individu dan pembimbing spiritual yang
+              modern yang didirikan pada tanggal 30 Mei 2024 Ki Raden Surya
+              Mudana, mempersiapkan individu dan pembimbing spiritual yang
               berbakat, serta mampu menghadapi tantangan spiritual dan
               kompleksitas hidup dengan kebijaksanaan.
             </p>
@@ -96,14 +96,14 @@ function TentangKami() {
               <FadeInOnScroll once={false}>
                 <p>
                   Sekolah Paranormal Indonesia adalah lembaga pendidikan
-                  spiritual modern yang didirikan pada tanggal 30 Mei 2024 oleh
-                  Rifki Rahmadani, mempersiapkan individu dan pembimbing
-                  spiritual yang berbakat, serta mampu menghadapi tantangan
-                  spiritual dan kompleksitas hidup dengan kebijaksanaan. Kami
-                  berkomitmen untuk membentuk generasi baru para profesional
-                  spiritual yang berintegritas, berpengetahuan luas, dan mampu
-                  memberikan dampak positif bagi siapa pun yang ingin
-                  menjelajahi jalan spiritual mereka.
+                  metafisika spiritual supranatural modern yang didirikan pada
+                  tanggal 30 Mei 2024 oleh Ki Raden Surya Mudana, mempersiapkan
+                  individu dan pembimbing spiritual yang berbakat, serta mampu
+                  menghadapi tantangan spiritual dan kompleksitas hidup dengan
+                  kebijaksanaan. Kami berkomitmen untuk membentuk generasi baru
+                  para profesional spiritual yang berintegritas, berpengetahuan
+                  luas, dan mampu memberikan dampak positif bagi siapa pun yang
+                  ingin menjelajahi jalan spiritual mereka.
                 </p>
                 <p>
                   Berpijak pada akar budaya Nusantara yang kaya akan ajaran
@@ -133,10 +133,10 @@ function TentangKami() {
               </FadeInOnScroll>
               <FadeInOnScroll once={false}>
                 <p>
-                  Dengan semangat ngelmu tanpa pamrih, kami memanggil para
-                  pejalan batin, penyembuh, dan pencari kebenaran untuk belajar,
-                  berbagi, dan tumbuh bersama. Sekolah ini bukan sekadar tempat
-                  belajar ilmu gaib, tetapi juga tempat untuk menempa watak dan
+                  Dengan semangat keluhuran, kami memanggil para pejalan batin,
+                  penyembuh, dan pencari kebenaran untuk belajar, berbagi, dan
+                  tumbuh bersama. Sekolah ini bukan sekadar tempat belajar ilmu
+                  metafisika, tetapi juga tempat untuk menempa watak dan
                   membangun etika spiritual, agar setiap kemampuan digunakan
                   demi keseimbangan semesta dan kemaslahatan sesama.
                 </p>
@@ -166,10 +166,10 @@ function TentangKami() {
                 <FadeInOnScroll once={false}>
                   <ul className="list-disc list-inside text-base md:text-lg text-justify">
                     <li>
-                      Menjadi padepokan ilmu batin Nusantara yang melahirkan
-                      warisan leluhur, membentuk karakter spiritual yang
-                      tangguh, membangkitkan kesadaran ruhani, dan menuntun
-                      generasi pewaris ilmu gaib menuju terang kebenaran dan
+                      Menjadi sekolah ilmu metafisika yang melahirkan warisan
+                      leluhur, membentuk karakter spiritual yang tangguh,
+                      membangkitkan kesadaran ruhani, dan menuntun generasi
+                      pewaris ilmu nenek moyang menuju terang kebenaran dan
                       keseimbangan semesta.
                     </li>
                   </ul>
@@ -274,8 +274,8 @@ function TentangKami() {
             <div className="text-base md:text-lg leading-relaxed space-y-4 text-justify">
               <FadeInOnScroll once={false}>
                 <p className=" text-amber-400">
-                  Sekolah Paranormal Indonesia merupakan lembaga pengembangan
-                  ilmu spiritual dan hipnoterapi yang legal, handal, dan
+                  Sekolah Paranormal merupakan lembaga kursus pelatihan ilmu
+                  spiritual supranatural metafisika yang legal, handal, dan
                   profesional.
                 </p>
               </FadeInOnScroll>

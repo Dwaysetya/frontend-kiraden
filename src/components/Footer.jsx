@@ -44,10 +44,9 @@ function Footer() {
               <Mail size={16} /> sekolahparanormal@gmail.com
             </p>
             <p className="text-xs mt-2 md:mt-4 flex flex-col md:flex-row items-center gap-2">
-              <GrLocation className="text-xl md:text-5xl" /> Jl.AMD MANUNGGAL 10
-              , RT: 003 / RW: 02 - NO.151 KELURAHAN KEDAUNG WETAN KEC.NEGLASARI
-              KOTA TANGGERANG 15128. Patokan (Gg Teratai 2 , toko agen Andi
-              Belakang RT agus)
+              <GrLocation className="text-xl md:text-5xl" /> Jl.BABU SALAM KP.
+              RAWA GEMPOL NO.7 , RT: 003 / RW: 05 DESA TELUK NAGA KEC.TELUK NAGA
+              KABUPATEN TANGGERANG BANTEN 15510.
             </p>
           </div>
 
