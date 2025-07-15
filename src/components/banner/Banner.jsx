@@ -15,12 +15,18 @@ function Banner() {
           {/* Content dengan z-index lebih tinggi */}
           <div className="relative z-10 flex flex-col md:flex-row w-full max-w-7xl mx-auto">
             <div className="flex flex-col px-5 gap-5 md:gap-7 md:py-30 w-full md:w-[50%] order-2 md:order-1">
-              <div className="flex gap-2">
-                <div className="border-b-4 border-white w-16 md:w-20 self-center"></div>
+              <div className="flex flex-col gap-2 mt-5">
+                <div className="border-b-4 border-white w-16 md:w-20 "></div>
                 <FadeInOnScroll once={false}>
                   <p className="text-white font-extrabold text-base md:text-lg">
-                    Hallo
+                    Sampurasun
                   </p>
+                  <p className="text-white font-extrabold text-base md:text-lg">
+                    Salam santun rahayu
+                  </p>
+                  {/* <p className="text-white font-extrabold text-base md:text-lg">
+                    Om swastiastu salom namo budaya
+                  </p> */}
                 </FadeInOnScroll>
               </div>
               <div className="flex flex-col gap-2">
@@ -44,10 +50,12 @@ function Banner() {
               </div>
               <FadeInOnScroll once={false}>
                 <div className="flex justify-center">
-                  <p className="text-white text-sm md:text-base text-left">
-                    Kami adalah lembaga pendidikan spiritual modern yang
-                    mengajarkan teknik hipnoterapi, pengembangan indra keenam,
-                    dan energi metafisik secara profesional dan bersertifikat.
+                  <p className="text-white text-sm md:text-base text-left font-cinzel ">
+                    Kami adalah lembaga kursus pelatihan dunia metafisika sakti
+                    tanpo aji mengajarkan dan mengupas tuntas segala keilmuan
+                    klenik mistik supranatual dari berbagai sudut pandang yang
+                    berbeda. Rasional dan tradisional & ilmiah/hikmah ( legal,
+                    handal dan profesional )
                   </p>
                 </div>
               </FadeInOnScroll>
