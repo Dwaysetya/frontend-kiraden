@@ -46,7 +46,7 @@ const CardsSection = () => {
           <div
             key={index}
             ref={index === 0 ? cardRef : null}
-            className="bg-[#202020] min-w-[100%] md:min-w-[30%] rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"
+            className="bg-[#202020] min-w-[100%] md:min-w-[30%] rounded-lg shadow-lg p-6 flex flex-col justify-between items-center text-center hover:shadow-xl transition-shadow duration-300"
           >
             <FadeInOnScroll once={false}>
               <img

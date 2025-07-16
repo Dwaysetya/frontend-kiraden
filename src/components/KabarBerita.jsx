@@ -30,15 +30,12 @@ function KabarBerita() {
     const interval = setInterval(() => {
       const container = scrollContainerRef.current;
       if (container) {
-        // Jika sudah mencapai ujung kanan
         if (
           container.scrollLeft + container.clientWidth >=
           container.scrollWidth - 5
         ) {
-          // Scroll balik ke awal
           container.scrollTo({ left: 0, behavior: "smooth" });
         } else {
-          // Geser ke kanan 1 langkah
           container.scrollBy({ left: 390, behavior: "smooth" });
         }
       }
@@ -66,14 +63,11 @@ function KabarBerita() {
     <>
       <section className="flex w-full justify-center items-center px-5 md:px-20 py-10 bg-black">
         <div className="flex w-full max-w-7xl flex-col gap-2">
-          {/* Judul */}
           <FadeInOnScroll once={false}>
             <h1 className="text-white font-bold text-3xl md:text-4xl">
               Kabar Berita
             </h1>
           </FadeInOnScroll>
-
-          {/* Konten */}
           <div
             ref={scrollContainerRef}
             className="flex flex-nowrap gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800"

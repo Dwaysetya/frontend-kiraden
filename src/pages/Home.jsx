@@ -29,7 +29,7 @@ function Home() {
               {iconRespons.map((item, index) => (
                 <div
                   className="flex-shrink-0 w-auto flex p-1 md:p-0 h-auto justify-center items-center
-                   min-w-[55px] md:min-w-0
+                   min-w-[51px] md:min-w-0
                    md:basis-auto
                    transition-all duration-300 ease-in-out
                    hover:-translate-y-3 hover:scale-110 hover:drop-shadow-lg
@@ -95,7 +95,7 @@ function Home() {
                   Tentang Kami
                 </p>
                 <h1
-                  className="text-xs sm:text-3xl md:text-4xl font-bold"
+                  className="text-[11px] sm:text-3xl md:text-4xl font-bold"
                   style={{
                     background:
                       "linear-gradient(to top, #906126, #f3cb51, #f3cb51, #a87c2d)",
@@ -106,7 +106,7 @@ function Home() {
                 >
                   SEKILAS SEKOLAH PARANORMAL
                 </h1>
-                <p className="text-xs sm:text-sm md:text-base lg:text-lg">
+                <p className="text-[10px] text-justify sm:text-sm md:text-base lg:text-lg">
                   Didirikan pada tanggal 30 Mei 2024 oleh Rifki Rahmdani,
                   Sekolah Paranormal Indonesia hadir sebagai wadah pembelajaran
                   ilmu-ilmu adiluhung warisan leluhur yang menghubungkan

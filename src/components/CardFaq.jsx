@@ -39,7 +39,7 @@ function CardFaq() {
             >
               <div className="self-center px-7 md:px-0">
                 <FadeInOnScroll once={false}>
-                  <h1 className="text-sm md:text-xl">{item.questions}</h1>
+                  <h1 className="text-xs md:text-xl">{item.questions}</h1>
                 </FadeInOnScroll>
               </div>
               <div
@@ -53,7 +53,7 @@ function CardFaq() {
               <div className="bg-white p-5 w-full">
                 <div className="px-5">
                   <FadeInOnScroll once={false}>
-                    <h1>{item.answer}</h1>
+                    <h1 className="text-xs">{item.answer}</h1>
                   </FadeInOnScroll>
                 </div>
               </div>

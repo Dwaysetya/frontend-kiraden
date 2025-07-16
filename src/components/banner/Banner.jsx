@@ -30,9 +30,7 @@ function Banner() {
               </div>
               <div className="flex flex-col gap-2">
                 <FadeInOnScroll once={false}>
-                  <h1 className="text-white text-2xl md:text-3xl">
-                    Selamat datang di
-                  </h1>
+                  <h1 className="text-white md:text-3xl">Selamat datang di</h1>
                   <h1
                     className=" text-4xl md:text-5xl font-extrabold tracking-wide"
                     style={{
