@@ -90,11 +90,11 @@ const CardsSection = () => {
       {isModalOpen && selectedCard && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
           <div className="bg-white rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto">
-            <div className="relative">
+            <div className="relative flex justify-center items-center p-5">
               <img
                 src={selectedCard.modalImage}
                 alt={`${selectedCard.title} Image`}
-                className="w-full h-48 object-cover rounded-t-lg"
+                className="max-w-full max-h-[80vh] object-contain rounded-xl shadow-lg transition duration-300 ease-in-out"
               />
               <button
                 onClick={closeModal}
