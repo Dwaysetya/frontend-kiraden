@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { isiKabar } from "../utils/Constanta";
 import FadeInOnScroll from "../animation/background/FadeInScroll";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
@@ -25,6 +25,26 @@ function KabarBerita() {
       });
     }
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const container = scrollContainerRef.current;
+      if (container) {
+        // Jika sudah mencapai ujung kanan
+        if (
+          container.scrollLeft + container.clientWidth >=
+          container.scrollWidth - 5
+        ) {
+          // Scroll balik ke awal
+          container.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          // Geser ke kanan 1 langkah
+          container.scrollBy({ left: 390, behavior: "smooth" });
+        }
+      }
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   const truncateText = (text, maxWords = 20) => {
     const words = text.split(" ");
@@ -86,7 +106,7 @@ function KabarBerita() {
                 </div>
               ))}
             </div>
-            <div className="absolute w-90 z-99 md:hidden flex justify-between mt-50">
+            <div className="absolute w-[90%] z-50 md:hidden flex justify-between mt-50">
               <button
                 onClick={scrollLeft}
                 className="absolute left-1 sm:left-4 top-1/2 transform-translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 sm:p-2 shadow-lg transition-all duration-200"
@@ -95,7 +115,7 @@ function KabarBerita() {
               </button>
               <button
                 onClick={scrollRight}
-                className="absolute right-0 sm:right-4 top-1/2 transform-translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 sm:p-2 shadow-lg transition-all duration-200"
+                className="absolute right-1 sm:right-4 top-1/2 transform-translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 sm:p-2 shadow-lg transition-all duration-200"
               >
                 <IoIosArrowForward className="text-white" />
               </button>

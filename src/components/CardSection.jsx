@@ -1,10 +1,33 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { cardRespons } from "../utils/Constanta";
 import FadeInOnScroll from "../animation/background/FadeInScroll";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 const CardsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
+  const scrollContainerRef = useRef(null);
+  const cardRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current && cardRef.current) {
+      const cardWidth = cardRef.current.offsetWidth + 48;
+      scrollContainerRef.current.scrollBy({
+        left: -cardWidth,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current && cardRef.current) {
+      const cardWidth = cardRef.current.offsetWidth + 48;
+      scrollContainerRef.current.scrollBy({
+        left: cardWidth,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const openModal = (card) => {
     setSelectedCard(card);
@@ -19,9 +42,10 @@ const CardsSection = () => {
   const renderCard = () => {
     return (
       <>
-        {cardRespons.map((card) => (
+        {cardRespons.map((card, index) => (
           <div
-            key={card.id}
+            key={index}
+            ref={index === 0 ? cardRef : null}
             className="bg-[#202020] min-w-[100%] md:min-w-[30%] rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"
           >
             <FadeInOnScroll once={false}>
@@ -58,11 +82,9 @@ const CardsSection = () => {
 
   return (
     <section className="w-full py-10 bg-[#2f2f2f] rounded-4xl relative">
-      {/* Garis putih di belakang - responsive positioning */}
       <div className="absolute top-20 sm:top-20 md:top-20 lg:top-20 left-0 right-0 h-0.5 bg-white z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Oval container dengan tulisan */}
         <div className="w-full flex justify-center items-center mb-8">
           <div className="bg-[#2f2f2f] border-2 border-white rounded-full px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-2">
             <FadeInOnScroll once={false}>
@@ -83,8 +105,25 @@ const CardsSection = () => {
         </div>
 
         {/* Grid untuk cards */}
-        <div className="flex flex-nowrap py-5 gap-12 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
+        <div
+          ref={scrollContainerRef}
+          className="flex flex-nowrap py-5 gap-12 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800"
+        >
           {renderCard()}
+          <div className="absolute w-[92%] z-99 md:hidden flex justify-between mt-50">
+            <button
+              onClick={scrollLeft}
+              className="absolute left-1 sm:left-4 top-1/2 transform-translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 sm:p-2 shadow-lg transition-all duration-200"
+            >
+              <IoIosArrowBack className="text-white" />
+            </button>
+            <button
+              onClick={scrollRight}
+              className="absolute right-1 sm:right-4 top-1/2 transform-translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 sm:p-2 shadow-lg transition-all duration-200"
+            >
+              <IoIosArrowForward className="text-white" />
+            </button>
+          </div>
         </div>
       </div>
       {isModalOpen && selectedCard && (
