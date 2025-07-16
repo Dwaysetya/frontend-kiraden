@@ -48,7 +48,7 @@ function TentangKami() {
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               Tentang Kami
             </h1>
-            <p className="text-base md:text-lg max-w-3xl text-justify">
+            <p className="text-xs md:text-lg max-w-3xl text-justify">
               Sekolah Paranormal Indonesia adalah lembaga pendidikan spiritual
               modern yang didirikan pada tanggal 30 Mei 2024 Ki Raden Surya
               Mudana, mempersiapkan individu dan pembimbing spiritual yang
@@ -67,19 +67,19 @@ function TentangKami() {
           <div className="flex gap-4 md:gap-8 border-b border-gray-700 pb-4 mb-8 text-sm md:text-base">
             <a
               href="#tentang-kami-detail"
-              className="underline decoration-amber-500 decoration-2 underline-offset-4"
+              className="underline text-xs decoration-amber-500 decoration-2 underline-offset-4"
             >
               Tentang Kami
             </a>
             <a
               href="#visi-misi-nilai"
-              className="hover:underline hover:decoration-amber-500 hover:decoration-2 hover:underline-offset-4"
+              className="hover:underline text-xs hover:decoration-amber-500 hover:decoration-2 hover:underline-offset-4"
             >
               Visi, Misi, dan Tata Nilai
             </a>
             <a
               href="#mitra-kami"
-              className="hover:underline hover:decoration-amber-500 hover:decoration-2 hover:underline-offset-4"
+              className="hover:underline text-xs hover:decoration-amber-500 hover:decoration-2 hover:underline-offset-4"
             >
               Mitra Kami
             </a>
@@ -94,7 +94,7 @@ function TentangKami() {
             </FadeInOnScroll>
             <div className="text-base md:text-lg leading-relaxed space-y-4 text-justify">
               <FadeInOnScroll once={false}>
-                <p>
+                <p className="text-xs md:text-lg">
                   Sekolah Paranormal Indonesia adalah lembaga pendidikan
                   metafisika spiritual supranatural modern yang didirikan pada
                   tanggal 30 Mei 2024 oleh Ki Raden Surya Mudana, mempersiapkan
@@ -105,25 +105,25 @@ function TentangKami() {
                   luas, dan mampu memberikan dampak positif bagi siapa pun yang
                   ingin menjelajahi jalan spiritual mereka.
                 </p>
-                <p>
+                <p className="text-xs md:text-lg ">
                   Berpijak pada akar budaya Nusantara yang kaya akan ajaran
                   spiritual dan penyembuhan alami, sekolah ini berdiri bukan
                   sekadar sebagai tempat menimba ilmu, melainkan sebagai
-                  padepokan modern — tempat bersemedi, bertanya, dan kembali
+                  padepokan modern. Tempat bersemedi, bertanya, dan kembali
                   menemukan jati diri sejati.
                 </p>
-                <p>
-                  Bidang yang kami tekuni mencakup:
-                  <ul className="list-disc text-amber-400">
-                    <li>
+                <p className="text-xs md:text-lg ">
+                  Bidang yang kami tekuni mencakup :
+                  <ul className="list-disc  text-amber-400">
+                    <li className="text-xs md:text-lg ">
                       Pendidikan Kesehatan Holistik, sebagai jalan menjaga
                       keselarasan antara raga, rasa, dan jiwa.
                     </li>
-                    <li>
+                    <li className="text-xs md:text-lg ">
                       Olah Pikir dan Metafisika, untuk mengasah ketajaman batin,
                       intuisi, dan kesadaran lintas dimensi.
                     </li>
-                    <li>
+                    <li className="text-xs md:text-lg ">
                       Terapi dan Pengobatan Tradisional, yang merujuk pada
                       kearifan lokal dalam menyembuhkan, merawat, dan menjaga
                       keharmonisan tubuh dan alam.
@@ -132,7 +132,7 @@ function TentangKami() {
                 </p>
               </FadeInOnScroll>
               <FadeInOnScroll once={false}>
-                <p>
+                <p className="text-xs md:text-lg ">
                   Dengan semangat keluhuran, kami memanggil para pejalan batin,
                   penyembuh, dan pencari kebenaran untuk belajar, berbagi, dan
                   tumbuh bersama. Sekolah ini bukan sekadar tempat belajar ilmu
@@ -165,7 +165,7 @@ function TentangKami() {
                 </FadeInOnScroll>
                 <FadeInOnScroll once={false}>
                   <ul className="list-disc list-inside text-base md:text-lg text-justify">
-                    <li>
+                    <li className="text-xs md:text-lg ">
                       Menjadi sekolah ilmu metafisika yang melahirkan warisan
                       leluhur, membentuk karakter spiritual yang tangguh,
                       membangkitkan kesadaran ruhani, dan menuntun generasi
@@ -184,7 +184,7 @@ function TentangKami() {
                 </FadeInOnScroll>
                 <ul className="list-disc list-inside text-base md:text-lg text-justify space-y-8">
                   <FadeInOnScroll once={false}>
-                    <li>
+                    <li className="text-xs md:text-lg ">
                       Menyelenggarakan pendidikan dan pelatihan ilmu paranormal
                       yang terstruktur, berbasis pengetahuan, etika, dan
                       universal serta dapat dipertanggungjawabkan secara etika
@@ -192,7 +192,7 @@ function TentangKami() {
                     </li>
                   </FadeInOnScroll>
                   <FadeInOnScroll once={false}>
-                    <li>
+                    <li className="text-xs md:text-lg ">
                       Mengembangkan potensi batin dan spiritual siswa melalui
                       pendekatan yang seimbang antara praktik dan teori,
                       termasuk meditasi, penyembuhan energi, intuisi, dan
@@ -200,7 +200,7 @@ function TentangKami() {
                     </li>
                   </FadeInOnScroll>
                   <FadeInOnScroll once={false}>
-                    <li>
+                    <li className="text-xs md:text-lg ">
                       Melestarikan dan menggali ilmu-ilmu warisan leluhur
                       Nusantara, seperti ilmu kebatinan, penyembuhan
                       tradisional, dan keilmuan metafisika Indonesia secara
@@ -208,7 +208,7 @@ function TentangKami() {
                     </li>
                   </FadeInOnScroll>
                   <FadeInOnScroll once={false}>
-                    <li>
+                    <li className="text-xs md:text-lg ">
                       Menanamkan nilai-nilai etika, tanggung jawab, dan kasih
                       dalam penggunaan ilmu spiritual, serta mendorong siswa/i
                       untuk menjadi agen perubahan positif bagi masyarakat dan
@@ -216,7 +216,7 @@ function TentangKami() {
                     </li>
                   </FadeInOnScroll>
                   <FadeInOnScroll once={false}>
-                    <li>
+                    <li className="text-xs md:text-lg ">
                       Membangun jaringan dan komunitas penggemar ilmu paranormal
                       yang terbuka, serta mendorong pengembangan riset dan
                       kolaborasi dengan disiplin ilmu lain.
@@ -234,11 +234,11 @@ function TentangKami() {
                   </FadeInOnScroll>
                   <FadeInOnScroll once={false}>
                     <ul className="list-disc list-inside text-base md:text-lg text-left">
-                      <li>Integritas</li>
-                      <li>Etika</li>
-                      <li>Kearifan Lokal</li>
-                      <li>Tanggung Jawab</li>
-                      <li>Pengembangan Diri</li>
+                      <li className="text-xs md:text-lg">Integritas</li>
+                      <li className="text-xs md:text-lg">Etika</li>
+                      <li className="text-xs md:text-lg">Kearifan Lokal</li>
+                      <li className="text-xs md:text-lg">Tanggung Jawab</li>
+                      <li className="text-xs md:text-lg">Pengembangan Diri</li>
                     </ul>
                   </FadeInOnScroll>
                 </div>
@@ -250,13 +250,15 @@ function TentangKami() {
                   </FadeInOnScroll>
                   <FadeInOnScroll once={false}>
                     <ul className="list-decimal list-inside text-base md:text-lg text-left">
-                      <li>Beradab</li>
-                      <li>Kecerdasan</li>
-                      <li>Niat yang kuat</li>
-                      <li>Bersungguh sungguh</li>
-                      <li>Dirhamun/ biaya</li>
-                      <li>Dekat dengan guru</li>
-                      <li>Istiqomah</li>
+                      <li className="text-xs md:text-lg ">Beradab</li>
+                      <li className="text-xs md:text-lg ">Kecerdasan</li>
+                      <li className="text-xs md:text-lg ">Niat yang kuat</li>
+                      <li className="text-xs md:text-lg ">
+                        Bersungguh sungguh
+                      </li>
+                      <li className="text-xs md:text-lg ">Dirhamun/ biaya</li>
+                      <li className="text-xs md:text-lg ">Dekat dengan guru</li>
+                      <li className="text-xs md:text-lg ">Istiqomah</li>
                     </ul>
                   </FadeInOnScroll>
                 </div>
@@ -273,14 +275,14 @@ function TentangKami() {
             </FadeInOnScroll>
             <div className="text-base md:text-lg leading-relaxed space-y-4 text-justify">
               <FadeInOnScroll once={false}>
-                <p className=" text-amber-400">
+                <p className=" text-amber-400 text-xs md:text-lg">
                   Sekolah Paranormal merupakan lembaga kursus pelatihan ilmu
                   spiritual supranatural metafisika yang legal, handal, dan
                   profesional.
                 </p>
               </FadeInOnScroll>
               <FadeInOnScroll once={false}>
-                <p>
+                <p className="text-xs md:text-lg">
                   Legalitas dan kredibilitas lembaga ini diperkuat dengan adanya
                   kerja sama resmi bersama ELPIKHI (Lembaga Pendidikan Ilmu
                   Kesehatan Holistik Indonesia), sebuah lembaga yang telah
@@ -289,7 +291,7 @@ function TentangKami() {
                 </p>
               </FadeInOnScroll>
               <FadeInOnScroll once={false}>
-                <p>
+                <p className="text-xs md:text-lg">
                   Selain itu, Rifki Rahmdani (Ki Raden Surya Mudana), seorang
                   praktisi sekaligus trainer berpengalaman sebagai trainer di
                   dunia keilmuan Metafisika Supranatural, Olah Pikir Hipnotis

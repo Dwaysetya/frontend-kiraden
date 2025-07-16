@@ -20,6 +20,10 @@ function CardGallery() {
       .catch((err) => console.error("Gagal load galeri:", err));
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="min-h-screen bg-[#202020] text-white px-6 py-12">
       <FadeInOnScroll once={false}>

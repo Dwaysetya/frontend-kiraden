@@ -242,8 +242,8 @@ function CardKontak() {
                 rows="4"
                 {...register("keperluan")}
                 autoComplete="off"
-                placeholder="Jelaskan keperluan atau pertanyaan Anda..."
-                className="w-full rounded-2xl bg-white/10 p-4 text-white placeholder-gray-400 border border-transparent focus:border-blue-500 focus:outline-none transition-all duration-200 resize-none"
+                placeholder="Jelaskan keperluan atau pertanyaan"
+                className="w-full rounded-2xl bg-white/10 p-4 text-white placeholder:text-xs placeholder-gray-400 border border-transparent focus:border-blue-500 focus:outline-none transition-all duration-200 resize-none"
               />
             </div>
             <div className="py-5">

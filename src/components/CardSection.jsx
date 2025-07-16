@@ -146,8 +146,7 @@ const CardsSection = () => {
               <h3 className="text-2xl font-bold text-gray-800 mb-2">
                 {selectedCard.title}
               </h3>
-              <p className="text-gray-600 text-sm md:text-base mb-4">
-                {/* {selectedCard.modalDescription} */}
+              <p className="text-gray-600 text-xs md:text-lgmd:text-base mb-4">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: selectedCard.modalDescription.replace(
@@ -157,7 +156,7 @@ const CardsSection = () => {
                   }}
                 />
               </p>
-              <ul className="list-disc list-inside text-gray-600 text-sm md:text-base">
+              <ul className="list-disc list-inside text-gray-600 text-xs md:text-lg">
                 {selectedCard.modalPoints.map((point, index) => (
                   <li key={index}>{point}</li>
                 ))}

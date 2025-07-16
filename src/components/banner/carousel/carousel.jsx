@@ -191,12 +191,6 @@ const AutoCarousel = () => {
               exit={{ scale: 0.5, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <button
-                onClick={closeModal}
-                className="absolute top-4 right-4 text-gray-300 hover:text-white text-2xl focus:outline-none z-10"
-              >
-                <FiX />
-              </button>
               <img
                 src={selectedImg}
                 alt="Full size preview"

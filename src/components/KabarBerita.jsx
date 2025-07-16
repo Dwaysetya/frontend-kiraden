@@ -43,6 +43,28 @@ function KabarBerita() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    if (isModalOpen) {
+      // Tambahkan state baru ke history browser
+      window.history.pushState({ modal: true }, "");
+
+      // Ketika user menekan tombol back
+      const handlePopState = () => {
+        closeModal(); // tutup modal
+      };
+
+      window.addEventListener("popstate", handlePopState);
+
+      return () => {
+        window.removeEventListener("popstate", handlePopState);
+        // Kembalikan 1 step history jika modal ditutup
+        if (window.history.state && window.history.state.modal) {
+          window.history.back();
+        }
+      };
+    }
+  }, [isModalOpen]);
+
   const truncateText = (text, maxWords = 20) => {
     const words = text.split(" ");
     if (words.length <= maxWords) return text;
@@ -85,11 +107,11 @@ function KabarBerita() {
                     <div className="text-sm py-2 text-gray-400">
                       {item.tanggal}
                     </div>
-                    <div className="text-base flex flex-col">
+                    <div className="text-xs md:text-lg flex flex-col">
                       {truncateText(item.description)}
                       {item.description.split(" ").length > 20 && (
                         <span
-                          className="text-blue-400 cursor-pointer hover:text-blue-300"
+                          className="text-blue-400 text-xs md:text-lg  cursor-pointer hover:text-blue-300"
                           onClick={() => openModal(item)}
                         >
                           lihat selengkapnya
@@ -117,12 +139,9 @@ function KabarBerita() {
           </div>
         </div>
       </section>
-
-      {/* Modal */}
       {isModalOpen && selectedItem && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            {/* Close button */}
             <div className="flex justify-end p-4">
               <button
                 onClick={closeModal}
@@ -131,23 +150,16 @@ function KabarBerita() {
                 ×
               </button>
             </div>
-
-            {/* Modal content */}
             <div className="px-6 pb-6">
-              {/* Foto */}
               <img
                 src={selectedItem.foto}
                 alt={selectedItem.judul}
                 className="w-full h-64 object-cover rounded-lg mb-6"
               />
-
-              {/* Judul */}
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
                 {selectedItem.judul}
               </h2>
-
-              {/* Description */}
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 text-xs md:text-lg leading-relaxed">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: selectedItem.description.replace(/\n/g, "<br />"),
