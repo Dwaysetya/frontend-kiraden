@@ -1,10 +1,30 @@
-import React, { useState } from "react";
+import { useState, useRef } from "react";
 import { isiKabar } from "../utils/Constanta";
 import FadeInOnScroll from "../animation/background/FadeInScroll";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 function KabarBerita() {
   const [selectedItem, setSelectedItem] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const scrollContainerRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: -300,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: 300,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const truncateText = (text, maxWords = 20) => {
     const words = text.split(" ");
@@ -34,8 +54,11 @@ function KabarBerita() {
           </FadeInOnScroll>
 
           {/* Konten */}
-          <div className="flex flex-nowrap gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
-            <div className="w-full flex gap-10 my-10">
+          <div
+            ref={scrollContainerRef}
+            className="flex flex-nowrap gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800"
+          >
+            <div className="w-full flex gap-10 my-10 relative">
               {isiKabar.map((item, index) => (
                 <div
                   key={index}
@@ -44,8 +67,10 @@ function KabarBerita() {
                 >
                   <FadeInOnScroll once={false}>
                     <div>{item.judul}</div>
-                    <div className="border-b-2 border-white w-full" />
-                    <div className="text-sm text-gray-400">{item.tanggal}</div>
+                    <div className="border-b-2 py-2 border-white w-full" />
+                    <div className="text-sm py-2 text-gray-400">
+                      {item.tanggal}
+                    </div>
                     <div className="text-base flex flex-col">
                       {truncateText(item.description)}
                       {item.description.split(" ").length > 20 && (
@@ -60,6 +85,20 @@ function KabarBerita() {
                   </FadeInOnScroll>
                 </div>
               ))}
+            </div>
+            <div className="absolute w-90 z-99 md:hidden flex justify-between mt-50">
+              <button
+                onClick={scrollLeft}
+                className="absolute left-1 sm:left-4 top-1/2 transform-translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 sm:p-2 shadow-lg transition-all duration-200"
+              >
+                <IoIosArrowBack className="text-white" />
+              </button>
+              <button
+                onClick={scrollRight}
+                className="absolute right-0 sm:right-4 top-1/2 transform-translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 sm:p-2 shadow-lg transition-all duration-200"
+              >
+                <IoIosArrowForward className="text-white" />
+              </button>
             </div>
           </div>
         </div>

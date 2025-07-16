@@ -93,7 +93,7 @@ const AutoCarousel = () => {
           </div>
           <button
             onClick={prevSlide}
-            className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-1 sm:p-2 shadow-lg transition-all duration-200"
+            className="absolute left-2 sm:left-4 top-1/2 transform-translate-y-1/2 bg-black/10 bg-opacity-80 hover:bg-opacity-100 rounded-full p-1 sm:p-2 shadow-lg transition-all duration-200"
           >
             <svg
               className="w-4 h-4 sm:w-6 sm:h-6 text-gray-800"
