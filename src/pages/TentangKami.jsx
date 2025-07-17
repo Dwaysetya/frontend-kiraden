@@ -185,7 +185,7 @@ function TentangKami() {
                 <ul className="list-disc list-inside text-base md:text-lg text-justify space-y-8">
                   <FadeInOnScroll once={false}>
                     <li className="text-xs md:text-lg ">
-                      Menyelenggarakan pendidikan dan pelatihan ilmu paranormal
+                      Menyelenggarakan pendidikan dan pendidikan ilmu paranormal
                       yang terstruktur, berbasis pengetahuan, etika, dan
                       universal serta dapat dipertanggungjawabkan secara etika
                       dan spiritual.
@@ -276,7 +276,7 @@ function TentangKami() {
             <div className="text-base md:text-lg leading-relaxed space-y-4 text-justify">
               <FadeInOnScroll once={false}>
                 <p className=" text-amber-400 text-xs md:text-lg">
-                  Sekolah Paranormal merupakan lembaga kursus pelatihan ilmu
+                  Sekolah Paranormal merupakan lembaga kursus pendidikan ilmu
                   spiritual supranatural metafisika yang legal, handal, dan
                   profesional.
                 </p>

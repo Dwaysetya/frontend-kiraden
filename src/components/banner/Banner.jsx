@@ -48,7 +48,7 @@ function Banner() {
               <FadeInOnScroll once={false}>
                 <div className="flex justify-center">
                   <p className="text-white text-sm md:text-base text-left font-cinzel ">
-                    Kami adalah lembaga kursus pelatihan dunia metafisika sakti
+                    Kami adalah lembaga kursus pendidikan dunia metafisika sakti
                     tanpo aji mengajarkan dan mengupas tuntas segala keilmuan
                     klenik mistik supranatual dari berbagai sudut pandang yang
                     berbeda. Rasional dan tradisional & ilmiah/hikmah ( legal,

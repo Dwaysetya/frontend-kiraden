@@ -98,11 +98,11 @@ export const cardRespons = [
     modalDescription:
       "Program pendidikan ini khusus ditujukan untuk kelas offline dengan sistem pembelajaran berjenjang selama 9 bulan. Dalam kurun waktu tersebut, peserta akan mengikuti materi secara bertahap dan mendalam, didampingi mentor profesional, serta difokuskan untuk menguasai keterampilan dan pengetahuan sesuai target kurikulum. Pilihan ideal bagi kamu yang ingin belajar secara langsung dengan suasana kelas yang interaktif dan mendukung perkembangan maksimal.\n \n mencakup kelas :",
     modalPoints: [
-      "Kelas Awalan: (Asror, Aktivasi energi, Silat ghaib, Kehadiran, Ketindihan).",
-      "Kelas Kebatinan: (Pagar ghoib, Kesurupan, Mediumisasi, Mata batin, Rogo sukmo).",
-      "Kelas Kedigdayaan: (Khodam, Laduni, Debus, Santet, Jailangkung).",
+      "Kelas Awalan: (Asror, Aktivasi energy, Silat ghaib, Pagar ghhaib, Bambu gila).",
+      "Kelas Kebatinan: (Kesurupan, Mediumisasi, Mata batin, Rogo sukmo, Ketindihan).",
+      "Kelas Kedigdayaan: (Khodam, Laduni, Kehadiran, Debus, Santet).",
       "Kelas Pengasihan: (Aura, Pelet, Susuk, Puter giling, Mandi kembang).",
-      "Kelas Ramalan:(Tarot, Tafsir mimpi, Weton, Falaqiah, Roda kehidupan).",
+      "Kelas Ramalan:(Tarot, Kartu kehidupan, Tafsir mimpi, Weton jawa, Roda kehidupan).",
     ],
   },
   {
@@ -128,7 +128,7 @@ export const cardRespons = [
     logo: SekolahTravis,
     title: "Pengobatan Holistik",
     description:
-      "Program pelatihan ilmu pengobatan alternatif atau tradisional.",
+      "Program pendidikan ilmu pengobatan alternatif atau tradisional.",
     modalImage: Umum,
     modalDescription:
       "Program ini secara khusus dirancang untuk melatih dan mendidik siswa/i dalam mempelajari ilmu pengobatan tradisional dan alternatif secara legal, profesional, dan terpercaya. Melalui pendekatan holistik, peserta akan diajarkan berbagai metode penyembuhan alami yang menyatukan unsur fisik, emosional, mental, dan spiritual. \n \nSelama mengikuti kelas ini, siswa/i tidak hanya mempelajari teori, tetapi juga praktik langsung yang aplikatif, dengan bimbingan mentor berpengalaman di bidang terapi tradisional, herbal, energi, dan teknik penyembuhan lainnya. Materi disampaikan secara sistematis dan sesuai standar praktik yang sah secara hukum.",
@@ -148,7 +148,7 @@ export const cardRespons = [
     description: "Memberikan dasar ilmu hipnotis untuk penggunaan umum.",
     modalImage: galeriFundamental,
     modalDescription:
-      "Kelas Hipnotis Fundamental adalah program pelatihan dasar yang dirancang khusus untuk membekali peserta dengan pengetahuan dan keterampilan inti dalam dunia hipnosis. Cocok untuk pemula maupun siapa pun yang tertarik memahami cara kerja pikiran bawah sadar, teknik sugesti, dan aplikasi hipnosis secara ilmiah, etis, dan bertanggung jawab.\n \nDi kelas ini, peserta akan mempelajari fondasi hipnotis dari nol — mulai dari teori dasar, teknik induksi, hingga praktik langsung dalam situasi nyata. Semua materi disampaikan secara sistematis oleh instruktur berpengalaman, serta disesuaikan dengan standar legal dan profesional.",
+      "Kelas Hipnotis Fundamental adalah program pendidikan dasar yang dirancang khusus untuk membekali peserta dengan pengetahuan dan keterampilan inti dalam dunia hipnosis. Cocok untuk pemula maupun siapa pun yang tertarik memahami cara kerja pikiran bawah sadar, teknik sugesti, dan aplikasi hipnosis secara ilmiah, etis, dan bertanggung jawab.\n \nDi kelas ini, peserta akan mempelajari fondasi hipnotis dari nol — mulai dari teori dasar, teknik induksi, hingga praktik langsung dalam situasi nyata. Semua materi disampaikan secara sistematis oleh instruktur berpengalaman, serta disesuaikan dengan standar legal dan profesional.",
     modalPoints: [
       "Pengantar hipnosis: mitos vs fakta.",
       "Cara kerja pikiran sadar & bawah sadar.",
@@ -279,7 +279,7 @@ export const cardRespons = [
     description: "Membantu pembuatan sertifikat uji kompetensi pribadi.",
     modalImage: galeriSertifikat,
     modalDescription:
-      "Membuat sertifikat yang sah untuk peserta atau siswa yang telah menyelesaikan program pelatihan tertentu. Program ini juga mencakup aspek legalitas dari sertifikat, termasuk cara pengesahan dan pembuatan dokumen resmi.\n \nTujuan: Memberikan keterampilan dalam pembuatan sertifikat yang sah dan terverifikasi untuk para siswa yang lulus dari kelas atau program tertentu, serta memberikan mereka pengakuan resmi.",
+      "Membuat sertifikat yang sah untuk peserta atau siswa yang telah menyelesaikan program pendidikan tertentu. Program ini juga mencakup aspek legalitas dari sertifikat, termasuk cara pengesahan dan pembuatan dokumen resmi.\n \nTujuan: Memberikan keterampilan dalam pembuatan sertifikat yang sah dan terverifikasi untuk para siswa yang lulus dari kelas atau program tertentu, serta memberikan mereka pengakuan resmi.",
     modalPoints: [
       "Format dan komponen sertifikat resmi.",
       "Desain visual profesional (layout, logo, QR code).",
@@ -297,7 +297,7 @@ export const answerQuestions = [
   {
     questions: "Apa itu Sekolah Paranormal?",
     answer:
-      "Sekolah paranormal adalah tempat atau institusi (formal atau non-formal) yang menyediakan pengajaran, pelatihan, atau pembelajaran terkait hal-hal supranatural atau metafisika.",
+      "Sekolah paranormal adalah tempat atau institusi (formal atau non-formal) yang menyediakan pengajaran, pendidikan, atau pembelajaran terkait hal-hal supranatural atau metafisika.",
   },
   {
     questions: "Apakah boleh non muslim ikut berpartisipasi belajar? ",
@@ -457,9 +457,9 @@ export const isiKabar = [
   },
   {
     tanggal: "Sabtu, 5 April 2025",
-    judul: "Pelatihan Berbagai Program Kelas Sekolah Paranormal",
+    judul: "pendidikan Berbagai Program Kelas Sekolah Paranormal",
     description:
-      "Sebagai wujud komitmen dalam membina dan mengembangkan potensi spiritual masyarakat, Sekolah Paranormal mengadakan kegiatan Pelatihan Berbagai Program Kelas pada 5 April 2025. Kegiatan ini diikuti oleh peserta dari berbagai daerah, mulai dari pemula hingga praktisi berpengalaman.\n \n`Kami tidak hanya mengajarkan ilmu, tapi juga nilai, etika, dan tanggung jawab dalam mempraktikkan kemampuan spiritual,` ujar salah satu pengajar senior.\n \nKegiatan ini diharapkan dapat menjadi sarana untuk mencetak praktisi spiritual yang berkualitas, etis, dan mampu membawa manfaat bagi masyarakat luas. ",
+      "Sebagai wujud komitmen dalam membina dan mengembangkan potensi spiritual masyarakat, Sekolah Paranormal mengadakan kegiatan pendidikan Berbagai Program Kelas pada 5 April 2025. Kegiatan ini diikuti oleh peserta dari berbagai daerah, mulai dari pemula hingga praktisi berpengalaman.\n \n`Kami tidak hanya mengajarkan ilmu, tapi juga nilai, etika, dan tanggung jawab dalam mempraktikkan kemampuan spiritual,` ujar salah satu pengajar senior.\n \nKegiatan ini diharapkan dapat menjadi sarana untuk mencetak praktisi spiritual yang berkualitas, etis, dan mampu membawa manfaat bagi masyarakat luas. ",
     foto: Program,
   },
   //  {
@@ -471,15 +471,9 @@ export const isiKabar = [
   //  },
   //  {
   //    tanggal: "15 November 2024",
-  //    judul: "Pelatihan Instruktur Baru",
+  //    judul: "pendidikan Instruktur Baru",
   //    description:
-  //      "Program pelatihan instruktur baru diluncurkan untuk mempersiapkan generasi penerus yang akan mengajarkan ilmu spiritual dan paranormal. Calon instruktur menjalani pelatihan intensif selama beberapa bulan untuk memastikan kualitas pengajaran tetap terjaga. Program ini mencakup teori, praktik, dan metodologi pengajaran yang efektif. Lulusan program ini akan menjadi ujung tombak dalam menyebarkan ilmu spiritual ke seluruh Indonesia.",
+  //      "Program pendidikan instruktur baru diluncurkan untuk mempersiapkan generasi penerus yang akan mengajarkan ilmu spiritual dan paranormal. Calon instruktur menjalani pendidikan intensif selama beberapa bulan untuk memastikan kualitas pengajaran tetap terjaga. Program ini mencakup teori, praktik, dan metodologi pengajaran yang efektif. Lulusan program ini akan menjadi ujung tombak dalam menyebarkan ilmu spiritual ke seluruh Indonesia.",
   //    foto: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
   //  },
 ];
-
-// export const renderGaleri = [
-//   {
-//     foto: Galery1,
-//   },
-// ];
