@@ -56,10 +56,10 @@ function CardKontak() {
   const onSubmit = (data) => {
     const message = `*FORMULIR KONTAK - SEKOLAH PARANORMAL*
 
-    📝 *Nama:* ${data.name}
-    📧 *Email:* ${data.email}
-    🏙️ *Asal Kota:* ${data.asal}
-    📋 *Keperluan:* ${data.keperluan}
+    *Nama:* ${data.name}
+    *Email:* ${data.email}
+    *Asal Kota:* ${data.asal}
+    *Keperluan:* ${data.keperluan}
     
     ---
     Pesan ini dikirim melalui formulir website Sekolah Paranormal.
