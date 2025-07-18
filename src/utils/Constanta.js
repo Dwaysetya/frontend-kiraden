@@ -477,3 +477,35 @@ export const isiKabar = [
   //    foto: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
   //  },
 ];
+
+  export const statsData = [
+    {
+      number: 500,
+      label: "Siswa Aktif",
+      suffix: "+",
+      icon: "👥",
+    },
+    {
+      number: 15,
+      label: "Tahun Pengalaman",
+      suffix: "",
+      icon: "⭐",
+    },
+    {
+      number: 20,
+      label: "Program Khusus",
+      suffix: "+",
+      icon: "📚",
+    },
+    {
+      number: 98,
+      label: "Tingkat Kepuasan",
+      suffix: "%",
+      icon: "🏆",
+    },
+  ];
+
+
+
+
+   

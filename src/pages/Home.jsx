@@ -12,6 +12,8 @@ import KabarBerita from "../components/KabarBerita";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import FadeInOnScroll from "../animation/background/FadeInScroll";
+import FloatingParticles from "../animation/background/FloatingParticle";
+import Pencapaian from "../components/PencapaianKami";
 
 function Home() {
   const Navigate = useNavigate();
@@ -60,6 +62,9 @@ function Home() {
       style={{ backgroundImage: `url(${Background})` }}
       id="beranda"
     >
+      <div className="absolute top-0 left-0 w-full h-full -z-10">
+        <FloatingParticles />
+      </div>
       <header>
         <Navbar />
       </header>
@@ -129,6 +134,9 @@ function Home() {
       </section>
       <section id="program-kelas-section">
         <CardsSection />
+      </section>
+      <section>
+        <Pencapaian />
       </section>
       <section
         className=" w-full flex flex-col justify-center items-center"
